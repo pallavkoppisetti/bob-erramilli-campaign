@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Bob Erramilli - Johns Creek City Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.556em;
+            color: #14213D;
+            background-color: #fff;
+        }
+
+        /* Fade-in animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+
+        .top-bar {
+            background: #012D5E;
+            color: white;
+            padding: 8px 0;
+        }
+
+        .top-bar-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-bar-text {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .top-bar-social {
+            display: flex;
+            gap: 8px;
+        }
+
+        .top-bar-social a {
+            width: 32px;
+            height: 32px;
+            background: #CE0D2D;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .top-bar-social a:hover {
+            background: #a00d25;
+        }
+
+        .header {
+            background: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+        }
+
+        .logo-svg {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+        .main-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #012D5E;
+            font-weight: 500;
+            font-size: 19px;
+            padding: 0px 14px;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            height: 100%;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #CE0D2D;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #f4f4f4;
+            box-shadow: 0 10px 30px 0 rgba(45, 45, 45, 0.2);
+            border: 1px solid #dadada;
+            border-radius: 0;
+            min-width: 300px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.4s ease;
+            z-index: 999;
+            padding: 6px 0px 15px 2px;
+            list-style: none;
+            margin: 0;
+            pointer-events: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .dropdown-menu li {
+            border-bottom: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown-menu a {
+            padding: 12px 20px;
+            color: #012D5E;
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu a:hover,
+        .dropdown-menu a.active {
+            color: #CE0D2D;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu a.dropdown-item {
+            padding: 12px 20px;
+            color: #012D5E;
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu a.dropdown-item:hover,
+        .dropdown-menu a.dropdown-item.active {
+            color: #CE0D2D;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu li:last-child a.dropdown-item {
+            border-bottom: none;
+        }
+
+        .donate-container {
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .donate-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 16px 50px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(206, 13, 45, 0.3);
+        }
+
+        .donate-button:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(206, 13, 45, 0.4);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/meet-bob.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            width: 100%;
+        }
+
+        .hero-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 90px;
+            font-weight: 900;
+            line-height: 0.889em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-quote {
+            background: rgba(1, 45, 94, 0.7);
+            padding: 40px;
+            border-radius: 0;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .hero-quote-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: white;
+        }
+
+        .hero-signature {
+            font-family: 'Noto Serif', serif;
+            font-size: 20px;
+            text-align: right;
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Section 1: A PROUD JOHNS CREEK RESIDENT */
+        .proud-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .proud-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .proud-content {
+            flex: 1;
+        }
+
+        .proud-header {
+            color: #666;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .proud-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: #012D5E;
+        }
+
+        .proud-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            margin-bottom: 40px;
+        }
+
+        .proud-text {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .donate-today-btn {
+            background: #CE0D2D;
+            color: white;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(206, 13, 45, 0.3);
+        }
+
+        .donate-today-btn:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(206, 13, 45, 0.4);
+        }
+
+        .proud-image {
+            flex: 1;
+            height: 500px;
+            background: url('assets/images/johns-creek.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+
+        /* Section 2: MAN OF JOHNS CREEK */
+        .man-section {
+            background: #F1F5FA;
+            padding: 100px 0;
+        }
+
+        .man-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .man-image {
+            flex: 1;
+            height: 500px;
+            background: url('assets/images/veteran.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+
+        .man-content {
+            flex: 1;
+        }
+
+        .man-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            margin-bottom: 40px;
+        }
+
+        .man-text {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .man-quote {
+            font-size: 24px;
+            font-weight: 600;
+            color: #CE0D2D;
+            font-style: italic;
+            line-height: 1.4;
+            margin-top: 40px;
+        }
+
+        /* Section 3: YEARS OF SERVICE */
+        .service-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .service-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .service-content {
+            flex: 1;
+        }
+
+        .service-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 1.1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            margin-bottom: 40px;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-list li {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-list li::before {
+            content: "✓";
+            color: #CE0D2D;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .issues-btn {
+            background: #CE0D2D;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 40px;
+            transition: background 0.3s ease;
+        }
+
+        .issues-btn:hover {
+            background: #a00d25;
+        }
+
+        .service-image {
+            flex: 1;
+            height: 500px;
+            background: url('assets/images/471210092_626735859692065_1231460104519616606_n.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background: #1a2332;
+            color: #a8b2d1;
+            padding: 80px 0 40px;
+        }
+
+        .footer-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 60px;
+        }
+
+        .footer-column h3 {
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-column.brand h3 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .footer-column.brand p {
+            font-size: 14px;
+            color: #a8b2d1;
+            margin: 0;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-contact {
+            margin-bottom: 30px;
+        }
+
+        .footer-contact a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact a:hover {
+            color: white;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: #2a3441;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a8b2d1;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: #012D5E;
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2a3441;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #a8b2d1;
+            font-size: 14px;
+            margin: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-title { font-size: 56px; }
+            .proud-container, .man-container, .service-container { flex-direction: column; gap: 40px; }
+            .proud-content, .man-content, .service-content { text-align: center; }
+            .proud-image, .man-image, .service-image { height: 400px; }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar { display: none; }
+            .header-container { flex-direction: column; gap: 20px; padding: 20px; }
+            .nav-container { padding: 0; }
+            .main-nav { flex-direction: column; gap: 20px; text-align: center; }
+            .hero { height: 80vh; padding: 40px 20px; }
+            .hero-title { font-size: 42px; }
+            .hero-container { padding: 0 20px; }
+            .proud-title, .man-title, .service-title { font-size: 36px; }
+            .proud-container, .man-container, .service-container { padding: 0 20px; }
+            .proud-image, .man-image, .service-image { height: 300px; }
+            .footer-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+            .footer-social { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <p class="top-bar-text">Working for Johns Creek</p>
+            <div class="top-bar-social">
+                <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <svg class="logo-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="20" width="220" height="80" fill="#012D5E" rx="8"/>
+                        <polygon points="240,30 280,50 240,70" fill="#CE0D2D"/>
+                        <text x="120" y="50" text-anchor="middle" fill="white" font-family="Roboto" font-weight="700" font-size="18">BOB ERRAMILLI</text>
+                        <text x="120" y="75" text-anchor="middle" fill="white" font-family="Roboto" font-weight="400" font-size="10" letter-spacing="1">JOHNS CREEK</text>
+                    </svg>
+                </a>
+            </div>
+            
+            <nav class="nav-container">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="meet-bob.html" class="active">Meet Bob ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="recognition.html">Recognitions and Endorsements</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="issues.html">Issues</a></li>
+                    <li>
+                        <a href="in-the-news.html">In The News</a>
+                    </li>
+                    <li><a href="contact.html">Join Our Team</a></li>
+                </ul>
+            </nav>
+            
+            <div class="donate-container">
+                <a href="#donate" class="donate-button">DONATE</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title fade-in-up">MEET<br>BOB<br>ERRAMILLI</h1>
+        </div>
+    </section>
+
+    <section class="proud-section">
+        <div class="proud-container">
+            <div class="proud-content">
+                <div class="proud-header fade-in-up">JOHNS CREEK CITY COUNCIL</div>
+                <h2 class="proud-title fade-in-up">A PROUD JOHNS CREEK RESIDENT</h2>
+                <p class="proud-text fade-in-up">Bob Erramilli is a distinguished leader with a unique combination of military service, business acumen, and community dedication. As a former combat pilot, he understands the importance of decisive leadership and strategic thinking under pressure.</p>
+                <p class="proud-text fade-in-up">In 2010, Bob established multiple medical practices focusing on providing exceptional healthcare services to the community. Through sound business principles and patient-centered care, he has built a reputation for excellence and reliability in the healthcare sector.</p>
+                <p class="proud-text fade-in-up">Bob has served his community and Johns Creek on numerous boards and organizations for over 15 years — including current City Council service, former HOA leadership, Sai Temple community programs, local charity initiatives, and various civic improvement projects.</p>
+                <a href="#donate" class="donate-today-btn fade-in-up">DONATE TODAY</a>
+            </div>
+            <div class="proud-image fade-in"></div>
+        </div>
+    </section>
+
+    <section class="man-section">
+        <div class="man-container">
+            <div class="man-image fade-in"></div>
+            <div class="man-content">
+                <h2 class="man-title fade-in-up">"MAN OF JOHNS CREEK"</h2>
+                <p class="man-text fade-in-up">He is a graduate of military aviation training and business leadership programs, a founding member and active participant in community improvement initiatives, and a dedicated advocate for smart growth and fiscal responsibility. The Johns Creek community has recognized him as a reliable voice for residents' concerns, and he has received commendations for his service both in the military and in local government.</p>
+                <p class="man-text fade-in-up">The Johns Creek community has recognized Bob for his contributions and service to the city.</p>
+                <p class="man-text fade-in-up">Bob and his family live in Johns Creek, where they are active members of the community. They participate in local events and support various civic initiatives.</p>
+                <p class="man-quote fade-in-up">"Keeping Johns Creek a great place to live, work, and raise a family."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="service-container">
+            <div class="service-content">
+                <h2 class="service-title fade-in-up">15+ YEARS OF UNWAVERING DEDICATION TO PUBLIC SERVICE, COMMITTED TO SUPPORTING JOHNS CREEK.</h2>
+                <ul class="service-list">
+                    <li class="fade-in-up">Current Johns Creek City Council Member</li>
+                    <li class="fade-in-up">Former Combat Pilot - Military Service</li>
+                    <li class="fade-in-up">Founder and Operator of Multiple Medical Practices</li>
+                    <li class="fade-in-up">Former HOA President - Community Leadership</li>
+                    <li class="fade-in-up">Sai Temple Community Leader and Volunteer</li>
+                    <li class="fade-in-up">"I Rose Up" Community Program Participant</li>
+                    <li class="fade-in-up">Local Charity Volunteer and Supporter</li>
+                    <li class="fade-in-up">Advocate for Smart Growth and Development</li>
+                    <li class="fade-in-up">Champion of Fiscal Responsibility</li>
+                    <li class="fade-in-up">Supporter of Public Safety Initiatives</li>
+                    <li class="fade-in-up">Advocate for Traffic Management Solutions</li>
+                </ul>
+                <a href="issues.html" class="issues-btn fade-in-up">THE ISSUES MATTER →</a>
+            </div>
+            <div class="service-image fade-in"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column brand">
+                    <h3>Representative Bob Erramilli</h3>
+                    <p>City Council District</p>
+                </div>
+                <div class="footer-column">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="meet-bob.html">Meet Bob</a></li>
+                        <li><a href="#issues">Issues</a></li>
+                        <li><a href="in-the-news.html">In The News</a></li>
+                        <li><a href="contact.html">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CONTACT US</h3>
+                    <div class="footer-contact">
+                        <a href="mailto:info@boberramilli.com">
+                            <i class="fas fa-envelope"></i>
+                            info@boberramilli.com
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL. ALL RIGHTS RESERVED.</p>
+                <p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        if ('IntersectionObserver' in window) {
+            const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Active navigation highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.main-nav a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath || 
+                    (currentPath === '' && link.getAttribute('href') === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

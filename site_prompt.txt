@@ -1,0 +1,4056 @@
+Directory Structure:
+
+└── ./
+    └── bob-erramilli-campaign
+        ├── assets
+        │   ├── css
+        │   │   └── main.css
+        │   └── js
+        │       └── main.js
+        ├── contact.html
+        ├── in-the-news.html
+        ├── index.html
+        ├── issues.html
+        └── meet-bob.html
+
+
+
+---
+File: /bob-erramilli-campaign/assets/css/main.css
+---
+
+/*
+=====================================
+MASTER STYLESHEET FOR BOB ERRAMILLI CAMPAIGN
+Final, Multi-Page Version
+=====================================
+*/
+
+/* --- Google Fonts & Font Awesome Icons --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Serif:wght@700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+/* --- Base & Body --- */
+:root {
+    --primary-blue: #1e3a8a;
+    --dark-blue: #112240;
+    --accent-red: #c8102e;
+    --light-gray: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* --- Animation Helpers --- */
+.scroll-animate {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transform: translateY(20px);
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container a {
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: 'Noto Serif', serif;
+    color: var(--primary-blue);
+    margin: 0;
+    font-size: 2em;
+    line-height: 1;
+}
+
+.logo-subtext {
+    margin: 0;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.main-navigation .main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navigation li {
+    margin-left: 25px;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.main-navigation a:hover,
+.main-navigation a.active {
+    color: var(--accent-red);
+    border-bottom-color: var(--accent-red);
+}
+
+.header-donate-button a {
+    background-color: var(--accent-red);
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.header-donate-button a:hover {
+    background-color: #a00d25;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* --- Page-Specific Headers --- */
+.page-header {
+    padding: 60px 0;
+    background-color: var(--light-gray);
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-header h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 3rem;
+    color: var(--primary-blue);
+}
+
+/* --- Main Content sections --- */
+.page-section {
+    padding: 80px 0;
+}
+
+.page-section.gray {
+    background-color: var(--light-gray);
+}
+
+.section-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.placeholder-image {
+    background-color: #f0f3f5;
+    border: 2px dashed #dce1e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #99a3ad;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+}
+
+/* --- Homepage Specific --- */
+.hero-section {
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hero-quote-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.hero-quote-box p {
+    font-size: 1.4em;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+
+.bio-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.bio-image {
+    flex: 1;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.bio-text h6 {
+    color: var(--accent-red);
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bio-text h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 2.8em;
+}
+
+.button-primary {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* --- Meet Bob Page Specific --- */
+.bio-detailed-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.bio-main-content p {
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+}
+
+.bio-sidebar .placeholder-image {
+    margin-bottom: 20px;
+}
+
+.bio-sidebar h3 {
+    font-family: 'Noto Serif', serif;
+    border-bottom: 2px solid var(--primary-blue);
+    padding-bottom: 10px;
+}
+
+.bio-sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bio-sidebar li {
+    margin-bottom: 10px;
+}
+
+/* --- Issues Page Specific --- */
+.issues-list .issue-item {
+    background: var(--light-gray);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--primary-blue);
+    border-radius: 0 8px 8px 0;
+}
+
+.issue-item h3 {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+/* --- In The News Page Specific --- */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.news-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.news-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.news-item-content {
+    padding: 20px;
+}
+
+.news-item h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* --- Contact Page Specific --- */
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--light-gray);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    display: inline-block;
+    background-color: var(--accent-red);
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- Footer --- */
+.site-footer {
+    background-color: var(--dark-blue);
+    color: #a8b2d1;
+}
+
+.footer-cta {
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer-cta h3 {
+    font-family: 'Noto Serif', serif;
+    color: var(--primary-blue);
+    font-size: 2em;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 15px;
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: 1px solid #2e3d5a;
+}
+
+.footer-column {
+    padding: 0 15px;
+}
+
+.footer-column h4,
+.footer-column h5 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #a8b2d1;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    color: #8892b0;
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+    .main-navigation {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--primary-blue);
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+
+    .main-header-inner {
+        position: relative;
+    }
+
+    .main-menu.mobile-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    .main-menu.mobile-active li {
+        margin: 0;
+    }
+
+    .main-menu.mobile-active a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .header-donate-button {
+        display: none;
+    }
+
+    .bio-container,
+    .service-container,
+    .footer-main,
+    .bio-detailed-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+---
+File: /bob-erramilli-campaign/assets/js/main.js
+---
+
+/*
+=====================================
+MASTER JAVASCRIPT FOR BOB ERRAMILLI CAMPAIGN
+Handles animations and navigation.
+=====================================
+*/
+
+jQuery(document).ready(function ($) {
+  // --- Mobile Navigation Toggle ---
+  $(".nav-toggle").on("click", function () {
+    var menu = $("#main-menu");
+    menu.toggleClass("mobile-active");
+    $(this).html(menu.hasClass("mobile-active") ? "×" : "☰");
+  });
+
+  // --- Active Page Highlighting in Navigation ---
+  var currentPath = window.location.pathname.split("/").pop();
+  if (currentPath === "") {
+    currentPath = "index.html";
+  }
+
+  $(".main-menu a").each(function () {
+    var linkPath = $(this).attr("href");
+    if (linkPath === currentPath) {
+      $(this).addClass("active");
+    }
+  });
+
+  // --- Scroll-triggered Animations ---
+  if ("IntersectionObserver" in window) {
+    const animatedElements = document.querySelectorAll(".scroll-animate");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+    animatedElements.forEach((el) => {
+      observer.observe(el);
+    });
+  }
+});
+
+
+
+---
+File: /bob-erramilli-campaign/contact.html
+---
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bob Erramilli for Johns Creek City Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.556em;
+            color: #14213D;
+            background-color: #fff;
+        }
+
+        /* Fade-in animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .zoom-in-left {
+            opacity: 0;
+            transform: translateX(-50px) scale(0.8);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .zoom-in-left.visible {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+
+        .zoom-in {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .zoom-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .top-bar {
+            background: #012D5E;
+            color: white;
+            padding: 8px 0;
+        }
+
+        .top-bar-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-bar-text {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .top-bar-social {
+            display: flex;
+            gap: 8px;
+        }
+
+        .top-bar-social a {
+            width: 32px;
+            height: 32px;
+            background: #CE0D2D;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .top-bar-social a:hover {
+            background: #a00d25;
+        }
+
+        .header {
+            background: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+        }
+
+        .logo-svg {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+        .main-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #012D5E;
+            font-weight: 500;
+            font-size: 19px;
+            padding: 0px 14px;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            height: 100%;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #CE0D2D;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            min-width: 220px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu a {
+            padding: 12px 20px;
+            color: #555;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .dropdown-menu a:hover {
+            color: #CE0D2D;
+            background: #f8f9fa;
+        }
+
+        .donate-container {
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .donate-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 16px 50px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(206, 13, 45, 0.3);
+        }
+
+        .donate-button:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(206, 13, 45, 0.4);
+        }
+
+        /* Hero Section - Contact Page */
+        .contact-hero {
+            height: 100vh;
+            background: linear-gradient(rgba(20, 33, 61, 0.29), rgba(20, 33, 61, 0.29)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23ddd" width="1200" height="800"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="48" font-family="sans-serif">[Johns Creek City Hall Government Building]</text></svg>');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            position: relative;
+            padding: 254px 0 130px 0;
+        }
+
+        .contact-hero-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            width: 100%;
+        }
+
+        .contact-hero h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 90px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin: 0;
+            line-height: 0.9em;
+        }
+
+        /* Red Section - Connect with Us */
+        .connect-section {
+            background-color: #CE0D2D;
+            min-height: 500px;
+            padding: 80px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .connect-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            gap: 60px;
+        }
+
+        .connect-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 60px;
+        }
+
+        .connect-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 1.1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .connect-email {
+            font-size: 18px;
+            margin-bottom: 0;
+            color: #012D5E;
+        }
+
+        .connect-email a {
+            color: #012D5E;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .connect-email a:hover {
+            color: #001a3a;
+        }
+
+        .connect-logo {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 60px;
+        }
+
+        .connect-logo-svg {
+            width: 350px;
+            height: auto;
+            max-width: 100%;
+        }
+
+        /* Form Section - Blue Background */
+        .form-section {
+            background: white;
+            padding: 120px 0;
+            margin-top: -99px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .form-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .form-box {
+            background: #012D5E;
+            padding: 80px;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 30px;
+        }
+
+        .form-group {
+            flex: 1;
+        }
+
+        .form-group.full-width {
+            width: 100%;
+        }
+
+        .form-group label {
+            display: block;
+            color: white;
+            font-weight: 500;
+            margin-bottom: 12px;
+            font-size: 18px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 18px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            background: white;
+            color: #333;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(206, 13, 45, 0.3);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .checkbox-group {
+            margin: 30px 0;
+        }
+
+        .checkbox-group > label {
+            color: white;
+            font-weight: 500;
+            margin-bottom: 20px;
+            display: block;
+            font-size: 18px;
+        }
+
+        .checkbox-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .checkbox-option {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .checkbox-option input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin: 2px 0 0 0;
+            cursor: pointer;
+        }
+
+        .checkbox-option label {
+            margin: 0;
+            color: white;
+            font-weight: 400;
+            cursor: pointer;
+            line-height: 1.5;
+            font-size: 17px;
+        }
+
+        .submit-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 25px 70px;
+            border: none;
+            border-radius: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            align-self: center;
+            margin-top: 30px;
+        }
+
+        .submit-button:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+        }
+
+
+
+        .footer {
+            background: #1a2332;
+            color: #a8b2d1;
+            padding: 80px 0 40px;
+        }
+
+        .footer-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 60px;
+        }
+
+        .footer-column h3 {
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-column.brand h3 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .footer-column.brand p {
+            font-size: 14px;
+            color: #a8b2d1;
+            margin: 0;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-contact {
+            margin-bottom: 30px;
+        }
+
+        .footer-contact a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact a:hover {
+            color: white;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: #2a3441;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a8b2d1;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: #012D5E;
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2a3441;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #a8b2d1;
+            font-size: 14px;
+            margin: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 1024px) {
+            .contact-hero h1 { font-size: 56px; }
+            .connect-section { min-height: 400px; padding: 60px 0; }
+            .connect-container { flex-direction: column; gap: 40px; text-align: center; }
+            .connect-content { padding: 0 40px; }
+            .connect-logo { padding: 0 40px; }
+            .form-row { flex-direction: column; }
+            .form-box { padding: 50px 60px; max-width: 700px; }
+            .connect-logo-svg { width: 280px; }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar { display: none; }
+            .header-container { flex-direction: column; gap: 20px; padding: 20px; }
+            .nav-container { padding: 0; }
+            .main-nav { flex-direction: column; gap: 20px; text-align: center; }
+            .contact-hero { 
+                height: 80vh; 
+                padding: 100px 20px 80px 20px; 
+                align-items: center;
+                justify-content: center;
+            }
+            .contact-hero h1 { font-size: 42px; text-align: center; }
+            .contact-hero-container { padding: 0 20px; }
+            .connect-section { min-height: 300px; padding: 40px 0; }
+            .connect-content { padding: 0 20px; }
+            .connect-logo { padding: 0 20px; }
+            .connect-container { padding: 0 20px; }
+            .connect-title { font-size: 34px; text-align: center; }
+            .form-box { 
+                padding: 40px 30px; 
+                margin: 0 20px;
+                max-width: none;
+            }
+            .form-title { font-size: 26px; }
+            .form-row { gap: 20px; }
+            .footer-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+            .footer-social { justify-content: center; }
+            .connect-logo-svg { width: 220px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <p class="top-bar-text">Working for Johns Creek</p>
+            <div class="top-bar-social">
+                <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <svg class="logo-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="20" width="220" height="80" fill="#012D5E" rx="8"/>
+                        <polygon points="240,30 280,50 240,70" fill="#CE0D2D"/>
+                        <text x="120" y="50" text-anchor="middle" fill="white" font-family="Roboto" font-weight="700" font-size="18">BOB ERRAMILLI</text>
+                        <text x="120" y="75" text-anchor="middle" fill="white" font-family="Roboto" font-weight="400" font-size="10" letter-spacing="1">JOHNS CREEK</text>
+                    </svg>
+                </a>
+            </div>
+            
+            <nav class="nav-container">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="meet-bob.html">Meet Bob ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#recognitions">Recognitions and Endorsements</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="issues.html">Issues</a></li>
+                    <li>
+                        <a href="in-the-news.html">In The News</a>
+                    </li>
+                    <li><a href="contact.html">Join Our Team</a></li>
+                </ul>
+            </nav>
+            
+            <div class="donate-container">
+                <a href="#donate" class="donate-button">DONATE</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="contact-hero-container">
+            <h1 class="zoom-in-left">CONTACT</h1>
+        </div>
+    </section>
+
+    <section class="connect-section">
+        <div class="connect-container">
+            <div class="connect-content">
+                <h2 class="connect-title fade-in-up">Connect with Us<br> and/or<br> Join Our Team</h2>
+                <div class="connect-email">
+                    <a href="mailto:info@boberramilli.com">info@boberramilli.com</a>
+                </div>
+            </div>
+            <div class="connect-logo">
+                <svg class="connect-logo-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="20" y="40" width="300" height="120" fill="#012D5E" rx="12"/>
+                    <polygon points="340,60 380,80 340,100" fill="white"/>
+                    <text x="170" y="85" text-anchor="middle" fill="white" font-family="Roboto" font-weight="700" font-size="24">BOB ERRAMILLI</text>
+                    <text x="170" y="110" text-anchor="middle" fill="white" font-family="Roboto" font-weight="400" font-size="14" letter-spacing="2">JOHNS CREEK CITY COUNCIL</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-box zoom-in">
+                <h3 class="form-title">Connect with Us</h3>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <label>I am interested in</label>
+                        <div class="checkbox-options">
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="yard-signs" name="interests[]" value="yard-signs">
+                                <label for="yard-signs">I need yard signs</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="canvassing" name="interests[]" value="canvassing">
+                                <label for="canvassing">Interested in canvassing neighborhoods</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="phone-calls" name="interests[]" value="phone-calls">
+                                <label for="phone-calls">Interested in making phone calls</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="postcards" name="interests[]" value="postcards">
+                                <label for="postcards">Interested in post cards</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" id="general-help" name="interests[]" value="general-help">
+                                <label for="general-help">Contact me - I just want to help where you need it!</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="comments">Comments *</label>
+                        <textarea id="comments" name="comments" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column brand">
+                    <h3>Representative Bob Erramilli</h3>
+                    <p>City Council District</p>
+                </div>
+                <div class="footer-column">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="meet-bob.html">Meet Bob</a></li>
+                        <li><a href="issues.html">Issues</a></li>
+                        <li><a href="in-the-news.html">In The News</a></li>
+                        <li><a href="contact.html">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CONTACT US</h3>
+                    <div class="footer-contact">
+                        <a href="mailto:info@boberramilli.com">
+                            <i class="fas fa-envelope"></i>
+                            info@boberramilli.com
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL. ALL RIGHTS RESERVED.</p>
+                <p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for animations
+        if ('IntersectionObserver' in window) {
+            const animatedElements = document.querySelectorAll('.fade-in-up, .zoom-in-left, .zoom-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Active navigation highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.main-nav a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath || 
+                    (currentPath === 'contact.html' && link.getAttribute('href') === 'contact.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+---
+File: /bob-erramilli-campaign/in-the-news.html
+---
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In The News - Bob Erramilli for Johns Creek City Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.556em;
+            color: #14213D;
+            background-color: #fff;
+        }
+
+        /* Fade-in animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .zoom-in-left {
+            opacity: 0;
+            transform: translateX(-50px) scale(0.8);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .zoom-in-left.visible {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+
+        .top-bar {
+            background: #012D5E;
+            color: white;
+            padding: 8px 0;
+        }
+
+        .top-bar-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-bar-text {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .top-bar-social {
+            display: flex;
+            gap: 8px;
+        }
+
+        .top-bar-social a {
+            width: 32px;
+            height: 32px;
+            background: #CE0D2D;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .top-bar-social a:hover {
+            background: #a00d25;
+        }
+
+        .header {
+            background: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+        }
+
+        .logo-svg {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+        .main-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #012D5E;
+            font-weight: 500;
+            font-size: 19px;
+            padding: 0px 14px;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            height: 100%;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #CE0D2D;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            min-width: 220px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu a {
+            padding: 12px 20px;
+            color: #555;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .dropdown-menu a:hover {
+            color: #CE0D2D;
+            background: #f8f9fa;
+        }
+
+        .donate-container {
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .donate-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(206, 13, 45, 0.3);
+        }
+
+        .donate-today-btn:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(206, 13, 45, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23ddd" width="1200" height="800"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="48" font-family="sans-serif">[Bob Erramilli Professional Government Photo]</text></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            width: 100%;
+        }
+
+        .hero-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 90px;
+            font-weight: 900;
+            line-height: 0.889em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: white;
+        }
+
+        /* Content Section */
+        .content-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .content-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .content-text {
+            flex: 1;
+        }
+
+        .content-badge {
+            color: #CE0D2D;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .content-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            margin-bottom: 30px;
+        }
+
+        .content-subtitle {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        .content-media {
+            flex: 1;
+            position: relative;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 350px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><rect fill="%23f0f0f0" width="640" height="360"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="24" font-family="sans-serif">[Bob Erramilli City Council Video]</text></svg>');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: rgba(206, 13, 45, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-placeholder:hover .play-button {
+            transform: scale(1.1);
+        }
+
+        /* News Grid Section */
+        .news-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .news-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .news-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .news-image {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .news-content {
+            padding: 30px;
+        }
+
+        .news-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #012D5E;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            color: #CE0D2D;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .read-more:hover {
+            color: #a00d25;
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background: #012D5E;
+            padding: 100px 0;
+        }
+
+        .newsletter-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .newsletter-content {
+            flex: 1;
+        }
+
+        .newsletter-header {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .newsletter-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: white;
+        }
+
+        .newsletter-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 0;
+        }
+
+        .newsletter-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .newsletter-button:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background: #1a2332;
+            color: #a8b2d1;
+            padding: 80px 0 40px;
+        }
+
+        .footer-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 60px;
+        }
+
+        .footer-column h3 {
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-column.brand h3 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .footer-column.brand p {
+            font-size: 14px;
+            color: #a8b2d1;
+            margin: 0;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-contact {
+            margin-bottom: 30px;
+        }
+
+        .footer-contact a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact a:hover {
+            color: white;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: #2a3441;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a8b2d1;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: #012D5E;
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2a3441;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #a8b2d1;
+            font-size: 14px;
+            margin: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-title { font-size: 56px; }
+            .content-container { flex-direction: column; gap: 60px; text-align: center; }
+            .newsletter-container { flex-direction: column; gap: 40px; text-align: center; }
+            .news-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar { display: none; }
+            .header-container { flex-direction: column; gap: 20px; padding: 20px; }
+            .nav-container { padding: 0; }
+            .main-nav { flex-direction: column; gap: 20px; text-align: center; }
+            .hero { height: 80vh; padding: 40px 20px; }
+            .hero-title { font-size: 42px; }
+            .hero-container { padding: 0 20px; }
+            .content-title, .newsletter-title { font-size: 36px; }
+            .content-container { padding: 0 20px; }
+            .news-grid { grid-template-columns: 1fr; gap: 20px; }
+            .footer-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+            .footer-social { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <p class="top-bar-text">Working for Johns Creek</p>
+            <div class="top-bar-social">
+                <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <svg class="logo-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="20" width="220" height="80" fill="#012D5E" rx="8"/>
+                        <polygon points="240,30 280,50 240,70" fill="#CE0D2D"/>
+                        <text x="120" y="50" text-anchor="middle" fill="white" font-family="Roboto" font-weight="700" font-size="18">BOB ERRAMILLI</text>
+                        <text x="120" y="75" text-anchor="middle" fill="white" font-family="Roboto" font-weight="400" font-size="10" letter-spacing="1">JOHNS CREEK</text>
+                    </svg>
+                </a>
+            </div>
+            
+            <nav class="nav-container">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="meet-bob.html">Meet Bob</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#recognitions">Recognitions and Endorsements</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="issues.html">Issues</a></li>
+                    <li>
+                        <a href="in-the-news.html" class="active">In The News</a>
+                    </li>
+                    <li><a href="contact.html">Join Our Team</a></li>
+                </ul>
+            </nav>
+            
+            <div class="donate-container">
+                <a href="#donate" class="donate-button">DONATE</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title zoom-in-left">IN THE NEWS</h1>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <div class="content-text">
+                <div class="content-badge fade-in-up">BOB ERRAMILLI</div>
+                <h2 class="content-title fade-in-up">PROVEN LEADER.<br>DEDICATED ADVOCATE.</h2>
+                <p class="content-subtitle fade-in-up">Representing Johns Creek<br>City Council District.</p>
+            </div>
+            <div class="content-media fade-in-up">
+                <div class="video-placeholder">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <div class="news-container">
+            <div class="news-grid">
+                <article class="news-item fade-in-up">
+                    <div class="news-image" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 250&quot;><rect fill=&quot;%23012D5E&quot; width=&quot;400&quot; height=&quot;250&quot;/><text x=&quot;50%&quot; y=&quot;40%&quot; text-anchor=&quot;middle&quot; fill=&quot;white&quot; font-size=&quot;16&quot; font-family=&quot;sans-serif&quot;>CITY COUNCIL</text><text x=&quot;50%&quot; y=&quot;60%&quot; text-anchor=&quot;middle&quot; fill=&quot;%23F8CB40&quot; font-size=&quot;20&quot; font-family=&quot;sans-serif&quot;>RESOLUTION 2024</text><text x=&quot;50%&quot; y=&quot;75%&quot; text-anchor=&quot;middle&quot; fill=&quot;%23F8CB40&quot; font-size=&quot;12&quot; font-family=&quot;sans-serif&quot;>✓ PASSED INTO LAW</text></svg>')"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">City Council Resolution 2024 Passed Into Law</h3>
+                        <a href="#" class="read-more">Read More »</a>
+                    </div>
+                </article>
+
+                <article class="news-item fade-in-up">
+                    <div class="news-image" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 250&quot;><rect fill=&quot;%23f0f0f0&quot; width=&quot;400&quot; height=&quot;250&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; text-anchor=&quot;middle&quot; fill=&quot;%23999&quot; font-size=&quot;16&quot; font-family=&quot;sans-serif&quot;>[Johns Creek Community Event]</text></svg>')"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">Bob Erramilli Advocates for Smart Growth Development</h3>
+                        <a href="#" class="read-more">Read More »</a>
+                    </div>
+                </article>
+
+                <article class="news-item fade-in-up">
+                    <div class="news-image" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 250&quot;><rect fill=&quot;%23f0f0f0&quot; width=&quot;400&quot; height=&quot;250&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; text-anchor=&quot;middle&quot; fill=&quot;%23999&quot; font-size=&quot;16&quot; font-family=&quot;sans-serif&quot;>[Bob at City Council Meeting]</text></svg>')"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">Representative Erramilli Named Community Leader of the Year</h3>
+                        <a href="#" class="read-more">Read More »</a>
+                    </div>
+                </article>
+
+                <article class="news-item fade-in-up">
+                    <div class="news-image" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 250&quot;><rect fill=&quot;%23f0f0f0&quot; width=&quot;400&quot; height=&quot;250&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; text-anchor=&quot;middle&quot; fill=&quot;%23999&quot; font-size=&quot;16&quot; font-family=&quot;sans-serif&quot;>[Public Safety Initiative]</text></svg>')"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">Bob Erramilli Champions Public Safety Initiatives for Johns Creek</h3>
+                        <a href="#" class="read-more">Read More »</a>
+                    </div>
+                </article>
+
+                <article class="news-item fade-in-up">
+                    <div class="news-image" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 250&quot;><rect fill=&quot;%23f0f0f0&quot; width=&quot;400&quot; height=&quot;250&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; text-anchor=&quot;middle&quot; fill=&quot;%23999&quot; font-size=&quot;16&quot; font-family=&quot;sans-serif&quot;>[Community Infrastructure]</text></svg>')"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">Infrastructure Improvements Approved for Johns Creek Neighborhoods</h3>
+                        <a href="#" class="read-more">Read More »</a>
+                    </div>
+                </article>
+
+                <article class="news-item fade-in-up">
+                    <div class="news-image" style="background-image: url('data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 400 250&quot;><rect fill=&quot;%23f0f0f0&quot; width=&quot;400&quot; height=&quot;250&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; text-anchor=&quot;middle&quot; fill=&quot;%23999&quot; font-size=&quot;16&quot; font-family=&quot;sans-serif&quot;>[Parks and Recreation]</text></svg>')"></div>
+                    <div class="news-content">
+                        <h3 class="news-title">New Parks and Recreation Facilities Planned for Johns Creek</h3>
+                        <a href="#" class="read-more">Read More »</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column brand">
+                    <h3>Representative Bob Erramilli</h3>
+                    <p>City Council District</p>
+                </div>
+                <div class="footer-column">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="meet-bob.html">Meet Bob</a></li>
+                        <li><a href="issues.html">Issues</a></li>
+                        <li><a href="in-the-news.html">In The News</a></li>
+                        <li><a href="contact.html">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CONTACT US</h3>
+                    <div class="footer-contact">
+                        <a href="mailto:info@boberramilli.com">
+                            <i class="fas fa-envelope"></i>
+                            info@boberramilli.com
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL. ALL RIGHTS RESERVED.</p>
+                <p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for animations
+        if ('IntersectionObserver' in window) {
+            const animatedElements = document.querySelectorAll('.fade-in-up, .zoom-in-left');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Active navigation highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.main-nav a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath || 
+                    (currentPath === 'in-the-news.html' && link.getAttribute('href') === 'in-the-news.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+---
+File: /bob-erramilli-campaign/index.html
+---
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob Erramilli for Johns Creek City Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.556em;
+            color: #14213D;
+            background-color: #fff;
+        }
+
+        .top-bar {
+            background: #012D5E;
+            color: white;
+            padding: 8px 0;
+        }
+
+        .top-bar-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-bar-text {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .top-bar-social {
+            display: flex;
+            gap: 8px;
+        }
+
+        .top-bar-social a {
+            width: 32px;
+            height: 32px;
+            background: #CE0D2D;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .top-bar-social a:hover {
+            background: #a00d25;
+        }
+
+        .header {
+            background: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+        }
+
+        .logo-svg {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+        .main-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #012D5E;
+            font-weight: 500;
+            font-size: 19px;
+            padding: 0px 14px;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            height: 100%;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #CE0D2D;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            min-width: 220px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu a {
+            padding: 12px 20px;
+            color: #555;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .dropdown-menu a:hover {
+            color: #CE0D2D;
+            background: #f8f9fa;
+        }
+
+        .donate-container {
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .donate-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 16px 50px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(206, 13, 45, 0.3);
+        }
+
+        .donate-button:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(206, 13, 45, 0.4);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23ddd" width="1200" height="800"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="48" font-family="sans-serif">[Hero Background Image - Bob in Professional Setting]</text></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            width: 100%;
+        }
+
+        .hero-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 90px;
+            font-weight: 900;
+            line-height: 0.889em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-quote {
+            background: rgba(1, 45, 94, 0.6);
+            padding: 40px;
+            border-radius: 0;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .hero-quote-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: white;
+        }
+
+        .hero-signature {
+            font-family: 'Noto Serif', serif;
+            font-size: 20px;
+            text-align: right;
+            color: white;
+            font-weight: 600;
+        }
+
+        .meet-section {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .meet-image {
+            width: 34.128%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800"><rect fill="%23f0f0f0" width="600" height="800"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="24" font-family="sans-serif">[Bob Family Photo - Casual Setting]</text></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .meet-content {
+            width: 65.872%;
+            background: #012D5E;
+            color: white;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .meet-badge {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .meet-badge::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #CE0D2D;
+        }
+
+        .meet-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .meet-text {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .meet-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 3px;
+            display: inline-block;
+            width: fit-content;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .meet-button:hover {
+            background: #a00d25;
+        }
+
+        .recognition-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .recognition-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            text-align: center;
+        }
+
+        .recognition-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            margin-bottom: 40px;
+        }
+
+        .recognition-text {
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+        }
+
+        .service-section {
+            background: #F1F5FA;
+            padding: 100px 0;
+        }
+
+        .service-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            text-align: center;
+        }
+
+        .service-years {
+            font-size: 72px;
+            font-weight: 900;
+            color: #012D5E;
+            margin-bottom: 20px;
+        }
+
+        .service-subtitle {
+            font-size: 18px;
+            margin-bottom: 60px;
+            color: #666;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .service-item {
+            font-size: 16px;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-item::before {
+            content: "–";
+            color: #CE0D2D;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .quote-section {
+            background: #012D5E;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .quote-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .quote-text {
+            font-size: 36px;
+            font-style: italic;
+            line-height: 1.4;
+            font-weight: 300;
+        }
+
+        .cta-section {
+            display: flex;
+            min-height: 80vh;
+        }
+
+        .cta-content {
+            flex: 1;
+            background: white;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cta-header {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .cta-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: #012D5E;
+        }
+
+        .cta-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cta-subtitle {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .cta-btn {
+            background: #CE0D2D;
+            color: white;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            display: inline-block;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(206, 13, 45, 0.3);
+        }
+
+        .cta-btn:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(206, 13, 45, 0.4);
+        }
+
+        .cta-image {
+            flex: 1;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><rect fill="%23e0e0e0" width="600" height="600"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="20" font-family="sans-serif">[Bob with Campaign Sign in Community Setting]</text></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .news-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .news-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .news-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .news-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-image {
+            height: 200px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect fill="%23f0f0f0" width="300" height="200"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="14" font-family="sans-serif">[News Image]</text></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-content h3 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .news-item.highlight {
+            background: #012D5E;
+            color: white;
+        }
+
+        .news-item.highlight .news-content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .news-item.highlight .news-content h3 {
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .news-item.highlight .news-badge {
+            background: #F8CB40;
+            color: #012D5E;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+
+        .footer {
+            background: #1a2332;
+            color: #a8b2d1;
+            padding: 80px 0 40px;
+        }
+
+        .footer-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 60px;
+        }
+
+        .footer-column h3 {
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-column.brand h3 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .footer-column.brand p {
+            font-size: 14px;
+            color: #a8b2d1;
+            margin: 0;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-contact {
+            margin-bottom: 30px;
+        }
+
+        .footer-contact a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact a:hover {
+            color: white;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: #2a3441;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a8b2d1;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: #012D5E;
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2a3441;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #a8b2d1;
+            font-size: 14px;
+            margin: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-title { font-size: 56px; }
+            .meet-section, .cta-section { flex-direction: column; }
+            .meet-content, .cta-content { padding: 60px 40px; }
+            .news-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar { display: none; }
+            .header-container { flex-direction: column; gap: 20px; padding: 20px; }
+            .nav-container { padding: 0; }
+            .main-nav { flex-direction: column; gap: 20px; text-align: center; }
+            .hero { height: 80vh; padding: 40px 20px; }
+            .hero-title { font-size: 42px; }
+            .hero-container { padding: 0 20px; }
+            .meet-content, .cta-content { padding: 40px 20px; }
+            .meet-title, .cta-title { font-size: 36px; }
+            .news-grid { grid-template-columns: 1fr; gap: 20px; }
+            .service-grid { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+            .footer-social { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <p class="top-bar-text">Working for Johns Creek</p>
+            <div class="top-bar-social">
+                <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="#home">
+                    <svg class="logo-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="20" width="220" height="80" fill="#012D5E" rx="8"/>
+                        <polygon points="240,30 280,50 240,70" fill="#CE0D2D"/>
+                        <text x="120" y="50" text-anchor="middle" fill="white" font-family="Roboto" font-weight="700" font-size="18">BOB ERRAMILLI</text>
+                        <text x="120" y="75" text-anchor="middle" fill="white" font-family="Roboto" font-weight="400" font-size="10" letter-spacing="1">JOHNS CREEK</text>
+                    </svg>
+                </a>
+            </div>
+            
+            <nav class="nav-container">
+                <ul class="main-nav">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="meet-bob.html">Meet Bob ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#recognitions">Recognitions and Endorsements</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#issues">Issues</a></li>
+                    <li>
+                        <a href="in-the-news.html">In The News</a>
+                    </li>
+                    <li><a href="contact.html">Join Our Team</a></li>
+                </ul>
+            </nav>
+            
+            <div class="donate-container">
+                <a href="#donate" class="donate-button">DONATE</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <h1 class="hero-title">REPRESENTATIVE<br>BOB<br>ERRAMILLI</h1>
+            <div class="hero-quote">
+                <p class="hero-quote-text">"It is an honor to represent you. My top priority will always be to create the best possible future for Johns Creek."</p>
+                <div class="hero-signature">Bob Erramilli</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="meet-section" id="meet">
+        <div class="meet-image"></div>
+        <div class="meet-content">
+            <div class="meet-badge">A PROVEN BUSINESS AND COMMUNITY LEADER<br>IN JOHNS CREEK</div>
+            <h2 class="meet-title">MEET BOB</h2>
+            <p class="meet-text">Bob Erramilli is a distinguished leader with a unique combination of military service, business acumen, and community dedication. As a former combat pilot, he understands the importance of decisive leadership and strategic thinking under pressure.</p>
+            <p class="meet-text">In 2010, Bob established multiple medical practices focusing on providing exceptional healthcare services to the community. Through sound business principles and patient-centered care, he has built a reputation for excellence and reliability in the healthcare sector.</p>
+            <p class="meet-text">Bob has served his community and Johns Creek on numerous boards and organizations for over 15 years — including current City Council service, former HOA leadership, Sai Temple community programs, local charity initiatives, and various civic improvement projects.</p>
+            <a href="#" class="meet-button">REP. BOB ERRAMILLI ON COMMUNITY LEADERSHIP</a>
+        </div>
+    </section>
+
+    <section class="recognition-section">
+        <div class="recognition-container">
+            <h2 class="recognition-title">BOB ERRAMILLI<br>RECOGNIZED LEADER IN JOHNS CREEK</h2>
+            <p class="recognition-text">He is a graduate of military aviation training and business leadership programs, a founding member and active participant in community improvement initiatives, and a dedicated advocate for smart growth and fiscal responsibility. The Johns Creek community has recognized him as a reliable voice for residents' concerns, and he has received commendations for his service both in the military and in local government.</p>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="service-container">
+            <div class="service-years">15+ years</div>
+            <p class="service-subtitle">of unwavering dedication to public service, committed to supporting Johns Creek.</p>
+            <div class="service-grid">
+                <div class="service-item">Current Johns Creek City Council Member</div>
+                <div class="service-item">Former Combat Pilot - Military Service</div>
+                <div class="service-item">Founder and Operator of Multiple Medical Practices</div>
+                <div class="service-item">Former HOA President - Community Leadership</div>
+                <div class="service-item">Sai Temple Community Leader and Volunteer</div>
+                <div class="service-item">"I Rose Up" Community Program Participant</div>
+                <div class="service-item">Local Charity Volunteer and Supporter</div>
+                <div class="service-item">Advocate for Smart Growth and Development</div>
+                <div class="service-item">Champion of Fiscal Responsibility</div>
+                <div class="service-item">Supporter of Public Safety Initiatives</div>
+                <div class="service-item">Advocate for Traffic Management Solutions</div>
+                <div class="service-item">Promoter of Parks and Recreation Development</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <div class="quote-container">
+            <p class="quote-text">"Keeping Johns Creek a great place to live, work, and raise a family."</p>
+        </div>
+    </section>
+
+    <section class="cta-section" id="donate">
+        <div class="cta-content">
+            <div class="cta-header">BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL</div>
+            <h2 class="cta-title">WE WORK FOR THE PEOPLE OF JOHNS CREEK</h2>
+            <p class="cta-subtitle">We can't do this alone! We ask that you support our mission.</p>
+            <a href="#" class="cta-btn">DONATE</a>
+        </div>
+        <div class="cta-image"></div>
+    </section>
+
+    <section class="news-section" id="news">
+        <div class="news-container">
+            <h2 class="news-title">IN THE NEWS</h2>
+            <div class="news-grid">
+                <article class="news-item highlight">
+                    <div class="news-content">
+                        <h3>COUNCIL RESOLUTION 2024</h3>
+                        <div class="news-badge">✓ PASSED INTO LAW</div>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <div class="news-image"></div>
+                    <div class="news-content">
+                        <h3>Dual enrollment committee for educational advancement</h3>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <div class="news-image"></div>
+                    <div class="news-content">
+                        <h3>Johns Creek Council of Community Development</h3>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <div class="news-image"></div>
+                    <div class="news-content">
+                        <h3>Bob speaking at City Council session on community priorities</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column brand">
+                    <h3>Representative Bob Erramilli</h3>
+                    <p>City Council District</p>
+                </div>
+                <div class="footer-column">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="meet-bob.html">Meet Bob</a></li>
+                        <li><a href="#issues">Issues</a></li>
+                        <li><a href="in-the-news.html">In The News</a></li>
+                        <li><a href="contact.html">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CONTACT US</h3>
+                    <div class="footer-contact">
+                        <a href="mailto:info@boberramilli.com">
+                            <i class="fas fa-envelope"></i>
+                            info@boberramilli.com
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL. ALL RIGHTS RESERVED.</p>
+                <p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+---
+File: /bob-erramilli-campaign/issues.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issues - Bob Erramilli for Johns Creek</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="main-header"><div class="container"><div class="main-header-inner"><div class="logo-container"><a href="index.html"><h1 class="logo-text">BOB ERRAMILLI</h1><p class="logo-subtext">FOR JOHNS CREEK CITY COUNCIL</p></a></div><nav class="main-navigation"><ul id="main-menu" class="main-menu"><li><a href="index.html">Home</a></li><li><a href="meet-bob.html">Meet Bob</a></li><li><a href="issues.html">Issues</a></li><li><a href="in-the-news.html">In The News</a></li><li><a href="contact.html">Contact</a></li></ul></nav><div class="header-donate-button"><a href="#donate" class="donate-button-link">Donate</a></div><button class="nav-toggle" aria-label="Toggle navigation">☰</button></div></div></header>
+    <main>
+        <div class="page-header"><div class="container"><h1 class="scroll-animate">Key Priorities</h1></div></div>
+        <section class="page-section"><div class="container">
+            <p class="section-intro scroll-animate">Bob is focused on the critical issues that matter most to Johns Creek residents. His priorities are designed to ensure our city remains a safe, prosperous, and wonderful place to live.</p>
+            <div class="issues-list">
+                <div class="issue-item scroll-animate"><h3>Public Safety</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+                <div class="issue-item scroll-animate"><h3>Economic Development & Town Center</h3><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+                <div class="issue-item scroll-animate"><h3>Quality of Life & Parks</h3><p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat. Facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam.</p></div>
+                <div class="issue-item scroll-animate"><h3>Traffic Easement</h3><p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Ut enim ad minim veniam, quis nostrud exercitation.</p></div>
+            </div>
+        </div></section>
+    </main>
+    <footer class="site-footer"><div class="footer-cta"><h3 class="scroll-animate">Come & Join Our Newsletter</h3><a href="newsletter.html" class="button-primary">Click to Join</a></div><div class="footer-main container"><div class="footer-column"><h4>Councilman Bob Erramilli</h4></div><div class="footer-column"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="meet-bob.html">Meet Bob</a></li><li><a href="issues.html">Issues</a></li></ul></div><div class="footer-column"><h5>Contact Us</h5><ul><li><a href="mailto:info@boberramilli.com">info@boberramilli.com</a></li></ul><div class="social-icons"><a href="https://www.facebook.com/boberramilli4JC/" target="_blank"><i class="fab fa-facebook"></i></a></div></div></div><div class="footer-bottom"><p>© 2025 Bob Erramilli for Johns Creek City Council. All rights reserved.</p><p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p></div></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+---
+File: /bob-erramilli-campaign/meet-bob.html
+---
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Bob Erramilli - Johns Creek City Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.556em;
+            color: #14213D;
+            background-color: #fff;
+        }
+
+        /* Fade-in animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+
+        .top-bar {
+            background: #012D5E;
+            color: white;
+            padding: 8px 0;
+        }
+
+        .top-bar-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-bar-text {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .top-bar-social {
+            display: flex;
+            gap: 8px;
+        }
+
+        .top-bar-social a {
+            width: 32px;
+            height: 32px;
+            background: #CE0D2D;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .top-bar-social a:hover {
+            background: #a00d25;
+        }
+
+        .header {
+            background: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+        }
+
+        .logo-svg {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+        .main-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #012D5E;
+            font-weight: 500;
+            font-size: 19px;
+            padding: 0px 14px;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            height: 100%;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #CE0D2D;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            min-width: 220px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu a {
+            padding: 12px 20px;
+            color: #555;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .dropdown-menu a:hover {
+            color: #CE0D2D;
+            background: #f8f9fa;
+        }
+
+        .donate-container {
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .donate-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 16px 50px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(206, 13, 45, 0.3);
+        }
+
+        .donate-button:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(206, 13, 45, 0.4);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23ddd" width="1200" height="800"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="48" font-family="sans-serif">[Bob Erramilli - Professional Leadership Photo]</text></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            width: 100%;
+        }
+
+        .hero-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 90px;
+            font-weight: 900;
+            line-height: 0.889em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-quote {
+            background: rgba(1, 45, 94, 0.7);
+            padding: 40px;
+            border-radius: 0;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .hero-quote-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: white;
+        }
+
+        .hero-signature {
+            font-family: 'Noto Serif', serif;
+            font-size: 20px;
+            text-align: right;
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Section 1: A PROUD JOHNS CREEK RESIDENT */
+        .proud-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .proud-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .proud-content {
+            flex: 1;
+        }
+
+        .proud-header {
+            color: #666;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .proud-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: #012D5E;
+        }
+
+        .proud-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            margin-bottom: 40px;
+        }
+
+        .proud-text {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .donate-today-btn {
+            background: #CE0D2D;
+            color: white;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(206, 13, 45, 0.3);
+        }
+
+        .donate-today-btn:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(206, 13, 45, 0.4);
+        }
+
+        .proud-image {
+            flex: 1;
+            height: 500px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500"><rect fill="%23f0f0f0" width="600" height="500"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="24" font-family="sans-serif">[Bob at Johns Creek Community Event or City Council]</text></svg>');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+
+        /* Section 2: MAN OF JOHNS CREEK */
+        .man-section {
+            background: #F1F5FA;
+            padding: 100px 0;
+        }
+
+        .man-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .man-image {
+            flex: 1;
+            height: 500px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500"><rect fill="%23e0e0e0" width="600" height="500"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="20" font-family="sans-serif">[Bob with Family at Community Event]</text></svg>');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+
+        .man-content {
+            flex: 1;
+        }
+
+        .man-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            margin-bottom: 40px;
+        }
+
+        .man-text {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .man-quote {
+            font-size: 24px;
+            font-weight: 600;
+            color: #CE0D2D;
+            font-style: italic;
+            line-height: 1.4;
+            margin-top: 40px;
+        }
+
+        /* Section 3: YEARS OF SERVICE */
+        .service-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .service-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .service-content {
+            flex: 1;
+        }
+
+        .service-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 1.1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            margin-bottom: 40px;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-list li {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-list li::before {
+            content: "✓";
+            color: #CE0D2D;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .issues-btn {
+            background: #CE0D2D;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 40px;
+            transition: background 0.3s ease;
+        }
+
+        .issues-btn:hover {
+            background: #a00d25;
+        }
+
+        .service-image {
+            flex: 1;
+            height: 500px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500"><rect fill="%23f0f0f0" width="600" height="500"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="20" font-family="sans-serif">[Bob Speaking at Podium - City Council or Community Event]</text></svg>');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background: #1a2332;
+            color: #a8b2d1;
+            padding: 80px 0 40px;
+        }
+
+        .footer-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 60px;
+        }
+
+        .footer-column h3 {
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-column.brand h3 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .footer-column.brand p {
+            font-size: 14px;
+            color: #a8b2d1;
+            margin: 0;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-contact {
+            margin-bottom: 30px;
+        }
+
+        .footer-contact a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact a:hover {
+            color: white;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: #2a3441;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a8b2d1;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: #012D5E;
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2a3441;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #a8b2d1;
+            font-size: 14px;
+            margin: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-title { font-size: 56px; }
+            .proud-container, .man-container, .service-container { flex-direction: column; gap: 40px; }
+            .proud-content, .man-content, .service-content { text-align: center; }
+            .proud-image, .man-image, .service-image { height: 400px; }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar { display: none; }
+            .header-container { flex-direction: column; gap: 20px; padding: 20px; }
+            .nav-container { padding: 0; }
+            .main-nav { flex-direction: column; gap: 20px; text-align: center; }
+            .hero { height: 80vh; padding: 40px 20px; }
+            .hero-title { font-size: 42px; }
+            .hero-container { padding: 0 20px; }
+            .proud-title, .man-title, .service-title { font-size: 36px; }
+            .proud-container, .man-container, .service-container { padding: 0 20px; }
+            .proud-image, .man-image, .service-image { height: 300px; }
+            .footer-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+            .footer-social { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <p class="top-bar-text">Working for Johns Creek</p>
+            <div class="top-bar-social">
+                <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <svg class="logo-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="20" width="220" height="80" fill="#012D5E" rx="8"/>
+                        <polygon points="240,30 280,50 240,70" fill="#CE0D2D"/>
+                        <text x="120" y="50" text-anchor="middle" fill="white" font-family="Roboto" font-weight="700" font-size="18">BOB ERRAMILLI</text>
+                        <text x="120" y="75" text-anchor="middle" fill="white" font-family="Roboto" font-weight="400" font-size="10" letter-spacing="1">JOHNS CREEK</text>
+                    </svg>
+                </a>
+            </div>
+            
+            <nav class="nav-container">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="meet-bob.html" class="active">Meet Bob ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#recognitions">Recognitions and Endorsements</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="issues.html">Issues</a></li>
+                    <li>
+                        <a href="in-the-news.html">In The News</a>
+                    </li>
+                    <li><a href="contact.html">Join Our Team</a></li>
+                </ul>
+            </nav>
+            
+            <div class="donate-container">
+                <a href="#donate" class="donate-button">DONATE</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title fade-in-up">MEET<br>BOB<br>ERRAMILLI</h1>
+        </div>
+    </section>
+
+    <section class="proud-section">
+        <div class="proud-container">
+            <div class="proud-content">
+                <div class="proud-header fade-in-up">JOHNS CREEK CITY COUNCIL</div>
+                <h2 class="proud-title fade-in-up">A PROUD JOHNS CREEK RESIDENT</h2>
+                <p class="proud-text fade-in-up">Bob Erramilli is a distinguished leader with a unique combination of military service, business acumen, and community dedication. As a former combat pilot, he understands the importance of decisive leadership and strategic thinking under pressure.</p>
+                <p class="proud-text fade-in-up">In 2010, Bob established multiple medical practices focusing on providing exceptional healthcare services to the community. Through sound business principles and patient-centered care, he has built a reputation for excellence and reliability in the healthcare sector.</p>
+                <p class="proud-text fade-in-up">Bob has served his community and Johns Creek on numerous boards and organizations for over 15 years — including current City Council service, former HOA leadership, Sai Temple community programs, local charity initiatives, and various civic improvement projects.</p>
+                <a href="#donate" class="donate-today-btn fade-in-up">DONATE TODAY</a>
+            </div>
+            <div class="proud-image fade-in"></div>
+        </div>
+    </section>
+
+    <section class="man-section">
+        <div class="man-container">
+            <div class="man-image fade-in"></div>
+            <div class="man-content">
+                <h2 class="man-title fade-in-up">"MAN OF JOHNS CREEK"</h2>
+                <p class="man-text fade-in-up">He is a graduate of military aviation training and business leadership programs, a founding member and active participant in community improvement initiatives, and a dedicated advocate for smart growth and fiscal responsibility. The Johns Creek community has recognized him as a reliable voice for residents' concerns, and he has received commendations for his service both in the military and in local government.</p>
+                <p class="man-text fade-in-up">The Johns Creek community has recognized Bob for his contributions and service to the city.</p>
+                <p class="man-text fade-in-up">Bob and his family live in Johns Creek, where they are active members of the community. They participate in local events and support various civic initiatives.</p>
+                <p class="man-quote fade-in-up">"Keeping Johns Creek a great place to live, work, and raise a family."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="service-container">
+            <div class="service-content">
+                <h2 class="service-title fade-in-up">15+ YEARS OF UNWAVERING DEDICATION TO PUBLIC SERVICE, COMMITTED TO SUPPORTING JOHNS CREEK.</h2>
+                <ul class="service-list">
+                    <li class="fade-in-up">Current Johns Creek City Council Member</li>
+                    <li class="fade-in-up">Former Combat Pilot - Military Service</li>
+                    <li class="fade-in-up">Founder and Operator of Multiple Medical Practices</li>
+                    <li class="fade-in-up">Former HOA President - Community Leadership</li>
+                    <li class="fade-in-up">Sai Temple Community Leader and Volunteer</li>
+                    <li class="fade-in-up">"I Rose Up" Community Program Participant</li>
+                    <li class="fade-in-up">Local Charity Volunteer and Supporter</li>
+                    <li class="fade-in-up">Advocate for Smart Growth and Development</li>
+                    <li class="fade-in-up">Champion of Fiscal Responsibility</li>
+                    <li class="fade-in-up">Supporter of Public Safety Initiatives</li>
+                    <li class="fade-in-up">Advocate for Traffic Management Solutions</li>
+                </ul>
+                <a href="issues.html" class="issues-btn fade-in-up">THE ISSUES MATTER →</a>
+            </div>
+            <div class="service-image fade-in"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column brand">
+                    <h3>Representative Bob Erramilli</h3>
+                    <p>City Council District</p>
+                </div>
+                <div class="footer-column">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="meet-bob.html">Meet Bob</a></li>
+                        <li><a href="#issues">Issues</a></li>
+                        <li><a href="in-the-news.html">In The News</a></li>
+                        <li><a href="contact.html">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CONTACT US</h3>
+                    <div class="footer-contact">
+                        <a href="mailto:info@boberramilli.com">
+                            <i class="fas fa-envelope"></i>
+                            info@boberramilli.com
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL. ALL RIGHTS RESERVED.</p>
+                <p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        if ('IntersectionObserver' in window) {
+            const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Active navigation highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.main-nav a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath || 
+                    (currentPath === '' && link.getAttribute('href') === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

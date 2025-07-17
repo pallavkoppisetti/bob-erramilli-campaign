@@ -1,0 +1,473 @@
+/*
+=====================================
+MASTER STYLESHEET FOR BOB ERRAMILLI CAMPAIGN
+Final, Multi-Page Version
+=====================================
+*/
+
+/* --- Google Fonts & Font Awesome Icons --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Serif:wght@700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+/* --- Base & Body --- */
+:root {
+    --primary-blue: #1e3a8a;
+    --dark-blue: #112240;
+    --accent-red: #c8102e;
+    --light-gray: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* --- Animation Helpers --- */
+.scroll-animate {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transform: translateY(20px);
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container a {
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: 'Noto Serif', serif;
+    color: var(--primary-blue);
+    margin: 0;
+    font-size: 2em;
+    line-height: 1;
+}
+
+.logo-subtext {
+    margin: 0;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.main-navigation .main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navigation li {
+    margin-left: 25px;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.main-navigation a:hover,
+.main-navigation a.active {
+    color: var(--accent-red);
+    border-bottom-color: var(--accent-red);
+}
+
+.header-donate-button a {
+    background-color: var(--accent-red);
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.header-donate-button a:hover {
+    background-color: #a00d25;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* --- Page-Specific Headers --- */
+.page-header {
+    padding: 60px 0;
+    background-color: var(--light-gray);
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-header h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 3rem;
+    color: var(--primary-blue);
+}
+
+/* --- Main Content sections --- */
+.page-section {
+    padding: 80px 0;
+}
+
+.page-section.gray {
+    background-color: var(--light-gray);
+}
+
+.section-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.placeholder-image {
+    background-color: #f0f3f5;
+    border: 2px dashed #dce1e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #99a3ad;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+}
+
+/* --- Homepage Specific --- */
+.hero-section {
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hero-quote-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.hero-quote-box p {
+    font-size: 1.4em;
+    font-style: italic;
+    margin: 0 0 15px 0;
+}
+
+.bio-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.bio-image {
+    flex: 1;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.bio-text h6 {
+    color: var(--accent-red);
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bio-text h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 2.8em;
+}
+
+.button-primary {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* --- Meet Bob Page Specific --- */
+.bio-detailed-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.bio-main-content p {
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+}
+
+.bio-sidebar .placeholder-image {
+    margin-bottom: 20px;
+}
+
+.bio-sidebar h3 {
+    font-family: 'Noto Serif', serif;
+    border-bottom: 2px solid var(--primary-blue);
+    padding-bottom: 10px;
+}
+
+.bio-sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bio-sidebar li {
+    margin-bottom: 10px;
+}
+
+/* --- Issues Page Specific --- */
+.issues-list .issue-item {
+    background: var(--light-gray);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--primary-blue);
+    border-radius: 0 8px 8px 0;
+}
+
+.issue-item h3 {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+/* --- In The News Page Specific --- */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.news-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.news-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.news-item-content {
+    padding: 20px;
+}
+
+.news-item h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* --- Contact Page Specific --- */
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--light-gray);
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    display: inline-block;
+    background-color: var(--accent-red);
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- Footer --- */
+.site-footer {
+    background-color: var(--dark-blue);
+    color: #a8b2d1;
+}
+
+.footer-cta {
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer-cta h3 {
+    font-family: 'Noto Serif', serif;
+    color: var(--primary-blue);
+    font-size: 2em;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 15px;
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: 1px solid #2e3d5a;
+}
+
+.footer-column {
+    padding: 0 15px;
+}
+
+.footer-column h4,
+.footer-column h5 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #a8b2d1;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    color: #8892b0;
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 768px) {
+    .main-navigation {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--primary-blue);
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+
+    .main-header-inner {
+        position: relative;
+    }
+
+    .main-menu.mobile-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    .main-menu.mobile-active li {
+        margin: 0;
+    }
+
+    .main-menu.mobile-active a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .header-donate-button {
+        display: none;
+    }
+
+    .bio-container,
+    .service-container,
+    .footer-main,
+    .bio-detailed-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
