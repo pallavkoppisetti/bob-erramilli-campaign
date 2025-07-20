@@ -24,6 +24,38 @@
             background-color: #fff;
         }
 
+        /* Fade-in animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .zoom-in-left {
+            opacity: 0;
+            transform: translateX(-50px) scale(0.8);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .zoom-in-left.visible {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+
         .top-bar {
             background: #012D5E;
             color: white;
@@ -413,7 +445,7 @@
             font-size: 72px;
             font-weight: 900;
             color: #012D5E;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
         .service-subtitle {
@@ -808,19 +840,26 @@
             
             <nav class="nav-container">
                 <ul class="main-nav">
-                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li class="dropdown">
                         <a href="meet-bob.html">Meet Bob ▼</a>
                         <ul class="dropdown-menu">
-                            <li><a href="recognition.html">Recognitions and Endorsements</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="recognition.html">Recognitions </a></li>
+                            <!-- <li><a href="#gallery">Gallery</a></li> -->
                         </ul>
                     </li>
                     <li><a href="issues.html">Issues</a></li>
                     <li>
-                        <a href="in-the-news.html">In The News</a>
+                        <a href="index.html#news">In The News</a>
                     </li>
-                    <li><a href="contact.html">Join Our Team</a></li>
+                    <li class="dropdown">
+                        <a href="contact.html">Join Our Team ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html?type=meet-greet" class="dropdown-item">Meet and Greet</a></li>
+                            <li><a href="contact.html?type=yard-sign" class="dropdown-item">Request Yard Sign</a></li>
+                            <li><a href="contact.html?type=walk-with-us" class="dropdown-item">Walk With Us in Your Neighborhood</a></li>
+                        </ul>    
+                    </li>
                 </ul>
             </nav>
             
@@ -832,93 +871,93 @@
 
     <section class="hero" id="home">
         <div class="hero-container">
-            <h1 class="hero-title">REPRESENTATIVE<br>BOB<br>ERRAMILLI</h1>
-            <div class="hero-quote">
-                <p class="hero-quote-text">"It is an honor to represent you. My top priority will always be to create the best possible future for Johns Creek."</p>
-                <div class="hero-signature">Bob Erramilli</div>
+            <h1 class="hero-title zoom-in-left">JOHNS CREEK<br>RANKED #1<br>CITY TO LIVE IN</h1>
+            <div class="hero-quote fade-in-up">
+                <p class="hero-quote-text">"Bob Erramilli has proven himself to be a dedicated public servant who consistently puts the interests of Johns Creek residents first. His commitment to fiscal responsibility and smart growth makes him the right choice for our community."</p>
+                <div class="hero-signature">— Senator Shawn Still, Georgia State Senate</div>
             </div>
         </div>
     </section>
 
     <section class="meet-section" id="meet">
-        <div class="meet-image"></div>
+        <div class="meet-image fade-in"></div>
         <div class="meet-content">
-            <div class="meet-badge">A PROVEN BUSINESS AND COMMUNITY LEADER<br>IN JOHNS CREEK</div>
-            <h2 class="meet-title">MEET BOB</h2>
-            <p class="meet-text">Bob Erramilli is a distinguished leader with a unique combination of military service, business acumen, and community dedication. As a former combat pilot, he understands the importance of decisive leadership and strategic thinking under pressure.</p>
-            <p class="meet-text">In 2010, Bob established multiple medical practices focusing on providing exceptional healthcare services to the community. Through sound business principles and patient-centered care, he has built a reputation for excellence and reliability in the healthcare sector.</p>
-            <p class="meet-text">Bob has served his community and Johns Creek on numerous boards and organizations for over 15 years — including current City Council service, former HOA leadership, Sai Temple community programs, local charity initiatives, and various civic improvement projects.</p>
-            <a href="#" class="meet-button">REP. BOB ERRAMILLI ON COMMUNITY LEADERSHIP</a>
+            <div class="meet-badge fade-in-up">A PROVEN BUSINESS AND COMMUNITY LEADER<br>IN JOHNS CREEK</div>
+            <h2 class="meet-title fade-in-up">MEET BOB</h2>
+            <p class="meet-text fade-in-up">Bob Erramilli is a distinguished leader with a unique combination of military service, business acumen, and community dedication. As a former combat pilot, he understands the importance of decisive leadership and strategic thinking under pressure.</p>
+            <p class="meet-text fade-in-up">In 2010, Bob established multiple medical practices focusing on providing exceptional healthcare services to the community. Through sound business principles and patient-centered care, he has built a reputation for excellence and reliability in the healthcare sector.</p>
+            <p class="meet-text fade-in-up">Bob has served his community and Johns Creek on numerous boards and organizations for over 15 years — including current City Council service, former HOA leadership, Sai Temple community programs, local charity initiatives, and various civic improvement projects.</p>
+            <a href="#" class="meet-button fade-in-up">REP. BOB ERRAMILLI ON COMMUNITY LEADERSHIP</a>
         </div>
     </section>
 
     <section class="recognition-section">
         <div class="recognition-container">
-            <h2 class="recognition-title">BOB ERRAMILLI<br>RECOGNIZED LEADER IN JOHNS CREEK</h2>
-            <p class="recognition-text">He is a graduate of military aviation training and business leadership programs, a founding member and active participant in community improvement initiatives, and a dedicated advocate for smart growth and fiscal responsibility. The Johns Creek community has recognized him as a reliable voice for residents' concerns, and he has received commendations for his service both in the military and in local government.</p>
+            <h2 class="recognition-title fade-in-up">BOB ERRAMILLI<br>RECOGNIZED LEADER IN JOHNS CREEK</h2>
+            <p class="recognition-text fade-in-up">He is a graduate of military aviation training and business leadership programs, a founding member and active participant in community improvement initiatives, and a dedicated advocate for smart growth and fiscal responsibility. The Johns Creek community has recognized him as a reliable voice for residents' concerns, and he has received commendations for his service both in the military and in local government.</p>
         </div>
     </section>
 
     <section class="service-section">
         <div class="service-container">
-            <div class="service-years">15+ years</div>
-            <p class="service-subtitle">of unwavering dedication to public service, committed to supporting Johns Creek.</p>
+            <div class="service-years fade-in-up">15+ years</div>
+            <p class="service-subtitle fade-in-up">of unwavering dedication to public service, committed to supporting Johns Creek.</p>
             <div class="service-grid">
-                <div class="service-item">Current Johns Creek City Council Member</div>
-                <div class="service-item">Former Combat Pilot - Military Service</div>
-                <div class="service-item">Founder and Operator of Multiple Medical Practices</div>
-                <div class="service-item">Former HOA President - Community Leadership</div>
-                <div class="service-item">Sai Temple Community Leader and Volunteer</div>
-                <div class="service-item">"I Rose Up" Community Program Participant</div>
-                <div class="service-item">Local Charity Volunteer and Supporter</div>
-                <div class="service-item">Advocate for Smart Growth and Development</div>
-                <div class="service-item">Champion of Fiscal Responsibility</div>
-                <div class="service-item">Supporter of Public Safety Initiatives</div>
-                <div class="service-item">Advocate for Traffic Management Solutions</div>
-                <div class="service-item">Promoter of Parks and Recreation Development</div>
+                <div class="service-item fade-in-up">Current Johns Creek City Council Member</div>
+                <div class="service-item fade-in-up">Former Combat Pilot - Military Service</div>
+                <div class="service-item fade-in-up">Founder and Operator of Multiple Medical Practices</div>
+                <div class="service-item fade-in-up">Former HOA President - Community Leadership</div>
+                <div class="service-item fade-in-up">Sai Temple Community Leader and Volunteer</div>
+                <div class="service-item fade-in-up">"I Rose Up" Community Program Participant</div>
+                <div class="service-item fade-in-up">Local Charity Volunteer and Supporter</div>
+                <div class="service-item fade-in-up">Advocate for Smart Growth and Development</div>
+                <div class="service-item fade-in-up">Champion of Fiscal Responsibility</div>
+                <div class="service-item fade-in-up">Supporter of Public Safety Initiatives</div>
+                <div class="service-item fade-in-up">Advocate for Traffic Management Solutions</div>
+                <div class="service-item fade-in-up">Promoter of Parks and Recreation Development</div>
             </div>
         </div>
     </section>
 
     <section class="quote-section">
         <div class="quote-container">
-            <p class="quote-text">"Keeping Johns Creek a great place to live, work, and raise a family."</p>
+            <p class="quote-text fade-in-up">"Keeping Johns Creek a great place to live, work, and raise a family."</p>
         </div>
     </section>
 
     <section class="cta-section" id="donate">
         <div class="cta-content">
-            <div class="cta-header">BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL</div>
-            <h2 class="cta-title">WE WORK FOR THE PEOPLE OF JOHNS CREEK</h2>
-            <p class="cta-subtitle">We can't do this alone! We ask that you support our mission.</p>
-            <a href="#" class="cta-btn">DONATE</a>
+            <div class="cta-header fade-in-up">BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL</div>
+            <h2 class="cta-title fade-in-up">WE WORK FOR THE PEOPLE OF JOHNS CREEK</h2>
+            <p class="cta-subtitle fade-in-up">We can't do this alone! We ask that you support our mission.</p>
+            <a href="#" class="cta-btn fade-in-up">DONATE</a>
         </div>
-        <div class="cta-image"></div>
+        <div class="cta-image fade-in"></div>
     </section>
 
     <section class="news-section" id="news">
         <div class="news-container">
-            <h2 class="news-title">IN THE NEWS</h2>
+            <h2 class="news-title fade-in-up">IN THE NEWS</h2>
             <div class="news-grid">
-                <article class="news-item highlight">
+                <article class="news-item highlight fade-in-up">
                     <div class="news-content">
                         <h3>COUNCIL RESOLUTION 2024</h3>
                         <div class="news-badge">✓ PASSED INTO LAW</div>
                     </div>
                 </article>
-                <article class="news-item">
+                <article class="news-item fade-in-up">
                     <div class="news-image"></div>
                     <div class="news-content">
                         <h3>Dual enrollment committee for educational advancement</h3>
                     </div>
                 </article>
-                <article class="news-item">
+                <article class="news-item fade-in-up">
                     <div class="news-image"></div>
                     <div class="news-content">
                         <h3>Johns Creek Council of Community Development</h3>
                     </div>
                 </article>
-                <article class="news-item">
+                <article class="news-item fade-in-up">
                     <div class="news-image"></div>
                     <div class="news-content">
                         <h3>Bob speaking at City Council session on community priorities</h3>
@@ -938,10 +977,10 @@
                 <div class="footer-column">
                     <h3>QUICK LINKS</h3>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="meet-bob.html">Meet Bob</a></li>
                         <li><a href="#issues">Issues</a></li>
-                        <li><a href="in-the-news.html">In The News</a></li>
+                        <li><a href="index.html#news">In The News</a></li>
                         <li><a href="contact.html">Join Our Team</a></li>
                     </ul>
                 </div>
@@ -969,5 +1008,28 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        if ('IntersectionObserver' in window) {
+            const animatedElements = document.querySelectorAll('.fade-in-up, .zoom-in-left, .fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        }
+    </script>
 </body>
 </html>

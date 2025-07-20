@@ -344,7 +344,7 @@
         }
 
         .connect-email a {
-            color: #012D5E;
+            color: white;
             text-decoration: none;
             font-weight: 500;
         }
@@ -708,15 +708,22 @@
                     <li class="dropdown">
                         <a href="meet-bob.html">Meet Bob ▼</a>
                         <ul class="dropdown-menu">
-                            <li><a href="recognition.html">Recognitions and Endorsements</a></li>
-                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="recognition.html">Recognitions </a></li>
+                            <!-- <li><a href="#gallery">Gallery</a></li> -->
                         </ul>
                     </li>
                     <li><a href="issues.html">Issues</a></li>
                     <li>
-                        <a href="in-the-news.html">In The News</a>
+                        <a href="index.html#news">In The News</a>
                     </li>
-                    <li><a href="contact.html">Join Our Team</a></li>
+                    <li class="dropdown">
+                        <a href="contact.html">Join Our Team ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html?type=meet-greet" class="dropdown-item">Meet and Greet</a></li>
+                            <li><a href="contact.html?type=yard-sign" class="dropdown-item">Request Yard Sign</a></li>
+                            <li><a href="contact.html?type=walk-with-us" class="dropdown-item">Walk With Us in Your Neighborhood</a></li>
+                        </ul>    
+                    </li>
                 </ul>
             </nav>
             
@@ -775,17 +782,17 @@
                                 <label for="yard-signs">I need yard signs</label>
                             </div>
                             <div class="checkbox-option">
-                                <input type="checkbox" id="canvassing" name="interests[]" value="canvassing">
-                                <label for="canvassing">Interested in canvassing neighborhoods</label>
+                                <input type="checkbox" id="walk-with-us" name="interests[]" value="walk-with-us">
+                                <label for="walk-with-us">Want to walk with us in neighborhoods</label>
                             </div>
                             <div class="checkbox-option">
                                 <input type="checkbox" id="phone-calls" name="interests[]" value="phone-calls">
                                 <label for="phone-calls">Interested in making phone calls</label>
                             </div>
                             <div class="checkbox-option">
-                                <input type="checkbox" id="postcards" name="interests[]" value="postcards">
-                                <label for="postcards">Interested in post cards</label>
-                            </div>
+                                <input type="checkbox" id="meet-greet" name="interests[]" value="meet-greet">
+                                <label for="meet-greet">Interested in meet and greet events</label>
+                            </div>                            
                             <div class="checkbox-option">
                                 <input type="checkbox" id="general-help" name="interests[]" value="general-help">
                                 <label for="general-help">Contact me - I just want to help where you need it!</label>
@@ -816,8 +823,8 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="meet-bob.html">Meet Bob</a></li>
-                        <li><a href="issues.html">Issues</a></li>
-                        <li><a href="in-the-news.html">In The News</a></li>
+                        <li><a href="#issues">Issues</a></li>
+                        <li><a href="index.html#news">In The News</a></li>
                         <li><a href="contact.html">Join Our Team</a></li>
                     </ul>
                 </div>
@@ -879,6 +886,35 @@
                     link.classList.add('active');
                 }
             });
+        });
+
+        // Form prefilling based on URL parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const type = urlParams.get('type');
+
+            // Clear all checkboxes first
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => checkbox.checked = false);
+
+            // Prefill based on type
+            switch(type) {
+                case 'meet-greet':
+                    document.getElementById('meet-greet').checked = true;
+                    document.getElementById('comments').value = 'I am interested in attending meet and greet events with Bob Erramilli. Please let me know about upcoming events in my area.';
+                    break;
+
+                case 'yard-sign':
+                    document.getElementById('yard-signs').checked = true;
+                    document.getElementById('comments').value = 'I would like to request yard signs to show my support for Bob Erramilli. Please let me know how to get them.';
+                    break;
+
+                case 'walk-with-us':
+                    document.getElementById('walk-with-us').checked = true;
+                    document.getElementById('canvassing').checked = true;
+                    document.getElementById('comments').value = 'I am interested in walking with the campaign team in my neighborhood to talk with voters about Bob Erramilli. Please contact me with details.';
+                    break;
+            }
         });
     </script>
 </body>
