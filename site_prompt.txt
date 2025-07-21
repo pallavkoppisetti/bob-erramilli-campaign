@@ -10,6 +10,7 @@ Directory Structure:
         ├── contact.html
         ├── gallery.html
         ├── in-the-news.html
+        ├── index_original.html
         ├── index.html
         ├── issues.html
         ├── meet-bob.html
@@ -713,7 +714,6 @@ File: /bob-erramilli-campaign/contact.html
             align-items: center;
             gap: 5px;
             height: 100%;
-            line-height: 1.2;
         }
 
         .main-nav a:hover,
@@ -2345,7 +2345,7 @@ File: /bob-erramilli-campaign/in-the-news.html
 
 
 ---
-File: /bob-erramilli-campaign/index.html
+File: /bob-erramilli-campaign/index_original.html
 ---
 
 <!DOCTYPE html>
@@ -3226,6 +3226,1228 @@ File: /bob-erramilli-campaign/index.html
                 <p class="hero-quote-text">"Bob Erramilli has proven himself to be a dedicated public servant who consistently puts the interests of Johns Creek residents first. His commitment to fiscal responsibility and smart growth makes him the right choice for our community."</p>
                 <div class="hero-signature">— Senator Shawn Still, Georgia State Senate</div>
             </div>
+        </div>
+    </section>
+
+    <section class="meet-section" id="meet">
+        <div class="meet-image fade-in"></div>
+        <div class="meet-content">
+            <div class="meet-badge fade-in-up">A PROVEN BUSINESS AND COMMUNITY LEADER<br>IN JOHNS CREEK</div>
+            <h2 class="meet-title fade-in-up">MEET BOB</h2>
+            <p class="meet-text fade-in-up">Bob Erramilli is a distinguished leader with a unique combination of military service, business acumen, and community dedication. As a former combat pilot, he understands the importance of decisive leadership and strategic thinking under pressure.</p>
+            <p class="meet-text fade-in-up">In 2010, Bob established multiple medical practices focusing on providing exceptional healthcare services to the community. Through sound business principles and patient-centered care, he has built a reputation for excellence and reliability in the healthcare sector.</p>
+            <p class="meet-text fade-in-up">Bob has served his community and Johns Creek on numerous boards and organizations for over 15 years — including current City Council service, former HOA leadership, Sai Temple community programs, local charity initiatives, and various civic improvement projects.</p>
+            <a href="#" class="meet-button fade-in-up">REP. BOB ERRAMILLI ON COMMUNITY LEADERSHIP</a>
+        </div>
+    </section>
+
+    <section class="recognition-section">
+        <div class="recognition-container">
+            <h2 class="recognition-title fade-in-up">BOB ERRAMILLI<br>RECOGNIZED LEADER IN JOHNS CREEK</h2>
+            <p class="recognition-text fade-in-up">He is a graduate of military aviation training and business leadership programs, a founding member and active participant in community improvement initiatives, and a dedicated advocate for smart growth and fiscal responsibility. The Johns Creek community has recognized him as a reliable voice for residents' concerns, and he has received commendations for his service both in the military and in local government.</p>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="service-container">
+            <div class="service-years fade-in-up">15+ years</div>
+            <p class="service-subtitle fade-in-up">of unwavering dedication to public service, committed to supporting Johns Creek.</p>
+            <div class="service-grid">
+                <div class="service-item fade-in-up">Current Johns Creek City Council Member</div>
+                <div class="service-item fade-in-up">Former Combat Pilot - Military Service</div>
+                <div class="service-item fade-in-up">Founder and Operator of Multiple Medical Practices</div>
+                <div class="service-item fade-in-up">Former HOA President - Community Leadership</div>
+                <div class="service-item fade-in-up">Sai Temple Community Leader and Volunteer</div>
+                <div class="service-item fade-in-up">"I Rose Up" Community Program Participant</div>
+                <div class="service-item fade-in-up">Local Charity Volunteer and Supporter</div>
+                <div class="service-item fade-in-up">Advocate for Smart Growth and Development</div>
+                <div class="service-item fade-in-up">Champion of Fiscal Responsibility</div>
+                <div class="service-item fade-in-up">Supporter of Public Safety Initiatives</div>
+                <div class="service-item fade-in-up">Advocate for Traffic Management Solutions</div>
+                <div class="service-item fade-in-up">Promoter of Parks and Recreation Development</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <div class="quote-container">
+            <p class="quote-text fade-in-up">"Keeping Johns Creek a great place to live, work, and raise a family."</p>
+        </div>
+    </section>
+
+    <section class="cta-section" id="donate">
+        <div class="cta-content">
+            <div class="cta-header fade-in-up">BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL</div>
+            <h2 class="cta-title fade-in-up">WE WORK FOR THE PEOPLE OF JOHNS CREEK</h2>
+            <p class="cta-subtitle fade-in-up">We can't do this alone! We ask that you support our mission.</p>
+            <a href="#" class="cta-btn fade-in-up">DONATE</a>
+        </div>
+        <div class="cta-image fade-in"></div>
+    </section>
+
+    <section class="news-section" id="news">
+        <div class="news-container">
+            <h2 class="news-title fade-in-up">IN THE NEWS</h2>
+            <div class="news-grid">
+                <article class="news-item highlight fade-in-up">
+                    <div class="news-content">
+                        <h3>COUNCIL RESOLUTION 2024</h3>
+                        <div class="news-badge">✓ PASSED INTO LAW</div>
+                    </div>
+                </article>
+                <article class="news-item fade-in-up">
+                    <div class="news-image"></div>
+                    <div class="news-content">
+                        <h3>Dual enrollment committee for educational advancement</h3>
+                    </div>
+                </article>
+                <article class="news-item fade-in-up">
+                    <div class="news-image"></div>
+                    <div class="news-content">
+                        <h3>Johns Creek Council of Community Development</h3>
+                    </div>
+                </article>
+                <article class="news-item fade-in-up">
+                    <div class="news-image"></div>
+                    <div class="news-content">
+                        <h3>Bob speaking at City Council session on community priorities</h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column brand">
+                    <h3>Representative Bob Erramilli</h3>
+                    <p>City Council District</p>
+                </div>
+                <div class="footer-column">
+                    <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="meet-bob.html">Meet Bob</a></li>
+                        <li><a href="#issues">Issues</a></li>
+                        <li><a href="index.html#news">In The News</a></li>
+                        <li><a href="contact.html">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CONTACT US</h3>
+                    <div class="footer-contact">
+                        <a href="mailto:info@boberramilli.com">
+                            <i class="fas fa-envelope"></i>
+                            info@boberramilli.com
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL. ALL RIGHTS RESERVED.</p>
+                <p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        if ('IntersectionObserver' in window) {
+            const animatedElements = document.querySelectorAll('.fade-in-up, .zoom-in-left, .fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+---
+File: /bob-erramilli-campaign/index.html
+---
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob Erramilli for Johns Creek City Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.556em;
+            color: #14213D;
+            background-color: #fff;
+        }
+
+        /* Fade-in animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .zoom-in-left {
+            opacity: 0;
+            transform: translateX(-50px) scale(0.8);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .zoom-in-left.visible {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+
+        .top-bar {
+            background: #012D5E;
+            color: white;
+            padding: 8px 0;
+        }
+
+        .top-bar-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-bar-text {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .top-bar-social {
+            display: flex;
+            gap: 8px;
+        }
+
+        .top-bar-social a {
+            width: 32px;
+            height: 32px;
+            background: #CE0D2D;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .top-bar-social a:hover {
+            background: #a00d25;
+        }
+
+        .header {
+            background: #fff;
+            padding: 13px 0;  /* Reduced from 15px to 13px (10% reduction) */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+        }
+
+        .logo-svg {
+            height: 54px;  /* Reduced from 60px to 54px (10% reduction) */
+            width: auto;
+        }
+
+        .nav-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+        .main-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #012D5E;
+            font-weight: 500;
+            font-size: 19px;
+            padding: 0px 14px;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            height: 100%;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #CE0D2D;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #f4f4f4;
+            box-shadow: 0 10px 30px 0 rgba(45, 45, 45, 0.2);
+            border: 1px solid #dadada;
+            border-radius: 0;
+            min-width: 300px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.4s ease;
+            z-index: 999;
+            padding: 6px 0px 15px 2px;
+            list-style: none;
+            margin: 0;
+            pointer-events: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .dropdown-menu li {
+            border-bottom: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown-menu a.dropdown-item {
+            padding: 12px 20px;
+            color: #012D5E;
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu a.dropdown-item:hover,
+        .dropdown-menu a.dropdown-item.active {
+            color: #CE0D2D;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu li:last-child a.dropdown-item {
+            border-bottom: none;
+        }
+
+        .donate-container {
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .donate-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 14px 45px;  /* Reduced from 16px 50px (10% reduction) */
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(206, 13, 45, 0.3);
+        }
+
+        .donate-button:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(206, 13, 45, 0.4);
+        }
+
+        /* Corrected Hero Credentials Section - Original Dimensions, Larger Content */
+        .hero-credentials {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 80px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .hero-credentials-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: grid;
+            grid-template-columns: 1fr 350px 1fr;
+            gap: 60px;
+            align-items: center;
+            min-height: 500px;
+        }
+
+        /* Left Column - Ranking Statement */
+        .ranking-statement {
+            text-align: left;
+        }
+
+        .ranking-badge {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .ranking-number {
+            font-family: 'Roboto', sans-serif;
+            font-size: 84px;  /* Increased from 72px */
+            font-weight: 900;
+            color: #CE0D2D;
+            line-height: 1;
+        }
+
+        .ranking-text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;  /* Increased from 18px */
+            font-weight: 700;
+            color: #012D5E;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        .ranking-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;  /* Increased from 42px */
+            font-weight: 900;
+            color: #012D5E;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .ranking-citation {
+            border-left: 4px solid #CE0D2D;
+            padding-left: 20px;
+        }
+
+        .ranking-citation p {
+            margin: 0 0 8px 0;
+            font-size: 17px;  /* Increased from 16px */
+            color: #012D5E;
+        }
+
+        .citation-detail {
+            font-size: 15px !important;  /* Increased from 14px */
+            color: #666 !important;
+            font-style: italic;
+        }
+
+        /* Center Column - Candidate Photo */
+        .candidate-photo {
+            text-align: center;
+            position: relative;
+        }
+
+        .photo-container {
+            position: relative;
+        }
+
+        .photo-placeholder {
+            width: 320px;  /* Increased from 300px */
+            height: 375px;  /* Increased from 350px */
+            background-image: url('assets/images/new_hero.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(1, 45, 94, 0.3);
+            margin: 0 auto 20px auto;
+            border: 4px solid #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photo-placeholder::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: linear-gradient(transparent, rgba(1, 45, 94, 0.1));
+            pointer-events: none;
+        }
+
+        .photo-caption h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;  /* Increased from 24px */
+            font-weight: 700;
+            color: #012D5E;
+            margin: 0 0 5px 0;
+        }
+
+        .photo-caption p {
+            font-size: 17px;  /* Increased from 16px */
+            color: #666;
+            margin: 0;
+        }
+
+        /* Right Column - Endorsement */
+        .endorsement-quote {
+            text-align: left;
+            position: relative;
+        }
+
+        .quote-mark {
+            font-size: 130px;  /* Increased from 120px */
+            font-weight: 900;
+            color: #CE0D2D;
+            line-height: 1;
+            margin-bottom: -20px;
+            opacity: 0.3;
+        }
+
+        .endorsement-quote blockquote {
+            margin: 0 0 25px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .endorsement-quote blockquote p {
+            font-size: 19px;  /* Increased from 18px */
+            line-height: 1.6;
+            color: #333;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .endorser {
+            text-align: right;
+            font-size: 16px;
+        }
+
+        .endorser strong {
+            color: #012D5E;
+            font-size: 19px;  /* Increased from 18px */
+        }
+
+        .endorser span {
+            color: #666;
+            font-size: 15px;  /* Increased from 14px */
+        }
+
+        .meet-section {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .meet-image {
+            width: 34.128%;
+            background: url('assets/images/family.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .meet-content {
+            width: 65.872%;
+            background: #012D5E;
+            color: white;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .meet-badge {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.5em;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .meet-badge::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #CE0D2D;
+        }
+
+        .meet-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .meet-text {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .meet-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 3px;
+            display: inline-block;
+            width: fit-content;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .meet-button:hover {
+            background: #a00d25;
+        }
+
+        .recognition-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .recognition-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            text-align: center;
+        }
+
+        .recognition-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            margin-bottom: 40px;
+        }
+
+        .recognition-text {
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+        }
+
+        .service-section {
+            background: #F1F5FA;
+            padding: 100px 0;
+        }
+
+        .service-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            text-align: center;
+        }
+
+        .service-years {
+            font-size: 72px;
+            font-weight: 900;
+            color: #012D5E;
+            margin-bottom: 40px;
+        }
+
+        .service-subtitle {
+            font-size: 18px;
+            margin-bottom: 60px;
+            color: #666;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .service-item {
+            font-size: 16px;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-item::before {
+            content: "–";
+            color: #CE0D2D;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .quote-section {
+            background: #012D5E;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .quote-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .quote-text {
+            font-size: 36px;
+            font-style: italic;
+            line-height: 1.4;
+            font-weight: 300;
+        }
+
+        .cta-section {
+            display: flex;
+            min-height: 80vh;
+        }
+
+        .cta-content {
+            flex: 1;
+            background: white;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cta-header {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .cta-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: #012D5E;
+        }
+
+        .cta-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cta-subtitle {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        .cta-btn {
+            background: #CE0D2D;
+            color: white;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            display: inline-block;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(206, 13, 45, 0.3);
+        }
+
+        .cta-btn:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(206, 13, 45, 0.4);
+        }
+
+        .cta-image {
+            flex: 1;
+            background: url('assets/images/CTA.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .news-section {
+            background: white;
+            padding: 100px 0;
+        }
+
+        .news-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .news-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+            line-height: 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #012D5E;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .news-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-image {
+            height: 200px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect fill="%23f0f0f0" width="300" height="200"/><text x="50%" y="50%" text-anchor="middle" fill="%23999" font-size="14" font-family="sans-serif">[News Image]</text></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-content h3 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+            margin: 0;
+        }
+
+        .news-item.highlight {
+            background: #012D5E;
+            color: white;
+        }
+
+        .news-item.highlight .news-content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .news-item.highlight .news-content h3 {
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .news-badge {
+            background: #F8CB40;
+            color: #012D5E;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+
+        .footer {
+            background: #1a2332;
+            color: #a8b2d1;
+            padding: 80px 0 40px;
+        }
+
+        .footer-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 80px;
+            margin-bottom: 60px;
+        }
+
+        .footer-column h3 {
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-column.brand h3 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .footer-column.brand p {
+            font-size: 14px;
+            color: #a8b2d1;
+            margin: 0;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-contact {
+            margin-bottom: 30px;
+        }
+
+        .footer-contact a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact a:hover {
+            color: white;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: #2a3441;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a8b2d1;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: #012D5E;
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2a3441;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #a8b2d1;
+            font-size: 14px;
+            margin: 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-credentials-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                text-align: center;
+            }
+
+            .ranking-statement, .endorsement-quote {
+                text-align: center;
+            }
+
+            .ranking-title {
+                font-size: 42px;
+            }
+
+            .ranking-number {
+                font-size: 72px;
+            }
+
+            .photo-placeholder {
+                width: 280px;
+                height: 330px;
+            }
+
+            .meet-section, .cta-section { flex-direction: column; }
+            .meet-content, .cta-content { padding: 60px 40px; }
+            .news-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar { display: none; }
+            .header-container { flex-direction: column; gap: 20px; padding: 20px; }
+            .nav-container { padding: 0; }
+            .main-nav { flex-direction: column; gap: 20px; text-align: center; }
+
+            .hero-credentials {
+                padding: 60px 0;
+            }
+
+            .hero-credentials-container {
+                padding: 0 20px;
+                gap: 40px;
+            }
+
+            .ranking-number {
+                font-size: 64px;
+            }
+
+            .ranking-title {
+                font-size: 32px;
+            }
+
+            .photo-placeholder {
+                width: 240px;
+                height: 280px;
+            }
+
+            .quote-mark {
+                font-size: 100px;
+            }
+
+            .endorsement-quote blockquote p {
+                font-size: 17px;
+            }
+
+            .meet-content, .cta-content { padding: 40px 20px; }
+            .meet-title, .cta-title { font-size: 36px; }
+            .news-grid { grid-template-columns: 1fr; gap: 20px; }
+            .service-grid { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+            .footer-social { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <p class="top-bar-text">Working for Johns Creek</p>
+            <div class="top-bar-social">
+                <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="#home">
+                    <svg class="logo-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="10" y="20" width="220" height="80" fill="#012D5E" rx="8"/>
+                        <polygon points="240,30 280,50 240,70" fill="#CE0D2D"/>
+                        <text x="120" y="50" text-anchor="middle" fill="white" font-family="Roboto" font-weight="700" font-size="18">BOB ERRAMILLI</text>
+                        <text x="120" y="75" text-anchor="middle" fill="white" font-family="Roboto" font-weight="400" font-size="10" letter-spacing="1">JOHNS CREEK</text>
+                    </svg>
+                </a>
+            </div>
+            
+            <nav class="nav-container">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="meet-bob.html">Meet Bob ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="recognition.html" class="dropdown-item">Recognitions </a></li>
+                            <!-- <li><a href="#gallery">Gallery</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="issues.html">Issues</a></li>
+                    <li class="dropdown">
+                        <a href="contact.html">Join Our Team ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html?type=meet-greet" class="dropdown-item">Meet and Greet</a></li>
+                            <li><a href="contact.html?type=yard-sign" class="dropdown-item">Request Yard Sign</a></li>
+                            <li><a href="contact.html?type=walk-with-us" class="dropdown-item">Walk With Us in Your Neighborhood</a></li>
+                        </ul>    
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="donate-container">
+                <a href="#donate" class="donate-button">DONATE</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Credentials Section -->
+    <section class="hero-credentials" id="home">
+        <div class="hero-credentials-container">
+            
+            <!-- Left Column: Johns Creek Ranking -->
+            <div class="ranking-statement">
+                <div class="ranking-badge fade-in-up">
+                    <span class="ranking-number">#1</span>
+                    <span class="ranking-text">BEST PLACE<br>TO LIVE</span>
+                </div>
+                <h1 class="ranking-title fade-in-up">JOHNS CREEK<br>RANKED #1<br>IN AMERICA</h1>
+                <div class="ranking-citation fade-in-up">
+                    <p><strong>U.S. News & World Report</strong> • 2025-2026</p>
+                    <p class="citation-detail">First Georgia city to win this honor since rankings began in 2016</p>
+                </div>
+            </div>
+
+            <!-- Center Column: Bob's Photo -->
+            <div class="candidate-photo fade-in">
+                <div class="photo-container">
+                    <div class="photo-placeholder">
+                        <!-- [Professional photo of Bob Erramilli] -->
+                    </div>
+                    <div class="photo-caption">
+                        <h3>Bob Erramilli</h3>
+                        <p>Johns Creek City Council</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Endorsement -->
+            <div class="endorsement-quote fade-in-up">
+                <div class="quote-mark">"</div>
+                <blockquote>
+                    <p>Bob Erramilli has proven himself to be a dedicated public servant who consistently puts the interests of Johns Creek residents first. His commitment to fiscal responsibility and smart growth makes him the right choice for our community.</p>
+                </blockquote>
+                <div class="endorser">
+                    <strong>— Senator Shawn Still</strong><br>
+                    <span>Georgia State Senate</span>
+                </div>
+            </div>
+
         </div>
     </section>
 

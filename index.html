@@ -56,53 +56,9 @@
             opacity: 1;
         }
 
-        .top-bar {
-            background: #012D5E;
-            color: white;
-            padding: 8px 0;
-        }
-
-        .top-bar-container {
-            max-width: 1220px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        .top-bar-text {
-            font-size: 14px;
-            font-weight: 400;
-            margin: 0;
-        }
-
-        .top-bar-social {
-            display: flex;
-            gap: 8px;
-        }
-
-        .top-bar-social a {
-            width: 32px;
-            height: 32px;
-            background: #CE0D2D;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 14px;
-            transition: background 0.3s ease;
-        }
-
-        .top-bar-social a:hover {
-            background: #a00d25;
-        }
-
         .header {
             background: #fff;
-            padding: 13px 0;  /* Reduced from 15px to 13px (10% reduction) */
+            padding: 15px 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
@@ -118,13 +74,32 @@
             padding: 0 20px;
         }
 
-        .logo-container {
+        /* Updated Campaign Logo/Text */
+        .campaign-branding {
             flex-shrink: 0;
+            text-decoration: none;
         }
 
-        .logo-svg {
-            height: 54px;  /* Reduced from 60px to 54px (10% reduction) */
-            width: auto;
+        .campaign-name {
+            font-family: 'Roboto', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #012D5E;
+            line-height: 1;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .campaign-tagline {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            color: #CE0D2D;
+            line-height: 1;
+            margin: 2px 0 0 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .nav-container {
@@ -218,17 +193,41 @@
             border-bottom: none;
         }
 
-        .donate-container {
-            width: 15%;
+        /* Updated right section with social media and donate */
+        .header-actions {
             display: flex;
-            justify-content: flex-end;
             align-items: center;
+            gap: 20px;
+        }
+
+        .header-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .header-social a {
+            width: 36px;
+            height: 36px;
+            background: #012D5E;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50%;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .header-social a:hover {
+            background: #CE0D2D;
+            transform: translateY(-2px);
         }
 
         .donate-button {
             background: #CE0D2D;
             color: white;
-            padding: 14px 45px;  /* Reduced from 16px 50px (10% reduction) */
+            padding: 14px 45px;
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
             font-size: 14px;
@@ -246,7 +245,7 @@
             box-shadow: 0 5px 10px rgba(206, 13, 45, 0.4);
         }
 
-        /* Corrected Hero Credentials Section - Original Dimensions, Larger Content */
+        /* Hero Credentials Section */
         .hero-credentials {
             background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
             padding: 80px 0;
@@ -278,7 +277,7 @@
 
         .ranking-number {
             font-family: 'Roboto', sans-serif;
-            font-size: 84px;  /* Increased from 72px */
+            font-size: 84px;
             font-weight: 900;
             color: #CE0D2D;
             line-height: 1;
@@ -286,7 +285,7 @@
 
         .ranking-text {
             font-family: 'Roboto', sans-serif;
-            font-size: 20px;  /* Increased from 18px */
+            font-size: 20px;
             font-weight: 700;
             color: #012D5E;
             text-transform: uppercase;
@@ -296,7 +295,7 @@
 
         .ranking-title {
             font-family: 'Roboto', sans-serif;
-            font-size: 48px;  /* Increased from 42px */
+            font-size: 48px;
             font-weight: 900;
             color: #012D5E;
             line-height: 1.1;
@@ -311,12 +310,12 @@
 
         .ranking-citation p {
             margin: 0 0 8px 0;
-            font-size: 17px;  /* Increased from 16px */
+            font-size: 17px;
             color: #012D5E;
         }
 
         .citation-detail {
-            font-size: 15px !important;  /* Increased from 14px */
+            font-size: 15px !important;
             color: #666 !important;
             font-style: italic;
         }
@@ -332,8 +331,8 @@
         }
 
         .photo-placeholder {
-            width: 320px;  /* Increased from 300px */
-            height: 375px;  /* Increased from 350px */
+            width: 320px;
+            height: 375px;
             background-image: url('assets/images/new_hero.jpg');
             background-size: cover;
             background-position: center;
@@ -358,14 +357,14 @@
 
         .photo-caption h3 {
             font-family: 'Roboto', sans-serif;
-            font-size: 26px;  /* Increased from 24px */
+            font-size: 26px;
             font-weight: 700;
             color: #012D5E;
             margin: 0 0 5px 0;
         }
 
         .photo-caption p {
-            font-size: 17px;  /* Increased from 16px */
+            font-size: 17px;
             color: #666;
             margin: 0;
         }
@@ -377,7 +376,7 @@
         }
 
         .quote-mark {
-            font-size: 130px;  /* Increased from 120px */
+            font-size: 130px;
             font-weight: 900;
             color: #CE0D2D;
             line-height: 1;
@@ -392,7 +391,7 @@
         }
 
         .endorsement-quote blockquote p {
-            font-size: 19px;  /* Increased from 18px */
+            font-size: 19px;
             line-height: 1.6;
             color: #333;
             font-style: italic;
@@ -406,12 +405,12 @@
 
         .endorser strong {
             color: #012D5E;
-            font-size: 19px;  /* Increased from 18px */
+            font-size: 19px;
         }
 
         .endorser span {
             color: #666;
-            font-size: 15px;  /* Increased from 14px */
+            font-size: 15px;
         }
 
         .meet-section {
@@ -884,6 +883,16 @@
             letter-spacing: 1px;
         }
 
+        /* Mobile Navigation Toggle */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #012D5E;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
         /* Responsive Design */
         @media (max-width: 1024px) {
             .hero-credentials-container {
@@ -915,10 +924,71 @@
         }
 
         @media (max-width: 768px) {
-            .top-bar { display: none; }
-            .header-container { flex-direction: column; gap: 20px; padding: 20px; }
-            .nav-container { padding: 0; }
-            .main-nav { flex-direction: column; gap: 20px; text-align: center; }
+            .header-container { 
+                flex-wrap: wrap; 
+                gap: 15px; 
+                padding: 15px 20px; 
+            }
+            
+            .campaign-branding {
+                order: 1;
+                flex: 1;
+            }
+            
+            .campaign-name {
+                font-size: 28px;
+            }
+            
+            .nav-toggle {
+                display: block;
+                order: 2;
+            }
+            
+            .nav-container {
+                order: 4;
+                width: 100%;
+                flex: none;
+                padding: 0;
+                display: none;
+            }
+            
+            .nav-container.active {
+                display: block;
+            }
+            
+            .main-nav {
+                flex-direction: column;
+                gap: 0;
+                background: #f8f9fa;
+                border-radius: 8px;
+                padding: 10px 0;
+                margin-top: 10px;
+            }
+            
+            .main-nav a {
+                padding: 15px 20px;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .header-actions {
+                order: 3;
+                gap: 15px;
+            }
+            
+            .header-social {
+                gap: 8px;
+            }
+            
+            .header-social a {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+            }
+            
+            .donate-button {
+                padding: 12px 25px;
+                font-size: 12px;
+            }
 
             .hero-credentials {
                 padding: 60px 0;
@@ -960,32 +1030,14 @@
     </style>
 </head>
 <body>
-    <div class="top-bar">
-        <div class="top-bar-container">
-            <p class="top-bar-text">Working for Johns Creek</p>
-            <div class="top-bar-social">
-                <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
     <header class="header">
         <div class="header-container">
-            <div class="logo-container">
-                <a href="#home">
-                    <svg class="logo-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="10" y="20" width="220" height="80" fill="#012D5E" rx="8"/>
-                        <polygon points="240,30 280,50 240,70" fill="#CE0D2D"/>
-                        <text x="120" y="50" text-anchor="middle" fill="white" font-family="Roboto" font-weight="700" font-size="18">BOB ERRAMILLI</text>
-                        <text x="120" y="75" text-anchor="middle" fill="white" font-family="Roboto" font-weight="400" font-size="10" letter-spacing="1">JOHNS CREEK</text>
-                    </svg>
-                </a>
-            </div>
+            <a href="#home" class="campaign-branding">
+                <h1 class="campaign-name">BOB ERRAMILLI</h1>
+                <p class="campaign-tagline">WORKING FOR JOHNS CREEK</p>
+            </a>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
             
             <nav class="nav-container">
                 <ul class="main-nav">
@@ -994,7 +1046,6 @@
                         <a href="meet-bob.html">Meet Bob ▼</a>
                         <ul class="dropdown-menu">
                             <li><a href="recognition.html" class="dropdown-item">Recognitions </a></li>
-                            <!-- <li><a href="#gallery">Gallery</a></li> -->
                         </ul>
                     </li>
                     <li><a href="issues.html">Issues</a></li>
@@ -1009,7 +1060,15 @@
                 </ul>
             </nav>
             
-            <div class="donate-container">
+            <div class="header-actions">
+                <div class="header-social">
+                    <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
                 <a href="#donate" class="donate-button">DONATE</a>
             </div>
         </div>
@@ -1191,6 +1250,17 @@
     </footer>
 
     <script>
+        // Mobile Navigation Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navContainer = document.querySelector('.nav-container');
+            
+            navToggle.addEventListener('click', function() {
+                navContainer.classList.toggle('active');
+                this.textContent = navContainer.classList.contains('active') ? '×' : '☰';
+            });
+        });
+
         // Intersection Observer for fade-in animations
         if ('IntersectionObserver' in window) {
             const animatedElements = document.querySelectorAll('.fade-in-up, .zoom-in-left, .fade-in');
