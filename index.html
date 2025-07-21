@@ -102,7 +102,7 @@
 
         .header {
             background: #fff;
-            padding: 15px 0;
+            padding: 13px 0;  /* Reduced from 15px to 13px (10% reduction) */
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
@@ -123,7 +123,7 @@
         }
 
         .logo-svg {
-            height: 60px;
+            height: 54px;  /* Reduced from 60px to 54px (10% reduction) */
             width: auto;
         }
 
@@ -197,23 +197,6 @@
             padding: 0;
         }
 
-        .dropdown-menu a {
-            padding: 12px 20px;
-            color: #012D5E;
-            font-size: 16px;
-            font-weight: 500;
-            display: block;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .dropdown-menu a:hover,
-        .dropdown-menu a.active {
-            color: #CE0D2D;
-            background: rgba(255, 255, 255, 0.1);
-        }
-
         .dropdown-menu a.dropdown-item {
             padding: 12px 20px;
             color: #012D5E;
@@ -245,7 +228,7 @@
         .donate-button {
             background: #CE0D2D;
             color: white;
-            padding: 16px 50px;
+            padding: 14px 45px;  /* Reduced from 16px 50px (10% reduction) */
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
             font-size: 14px;
@@ -263,57 +246,172 @@
             box-shadow: 0 5px 10px rgba(206, 13, 45, 0.4);
         }
 
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/hero.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            color: white;
-            position: relative;
+        /* Corrected Hero Credentials Section - Original Dimensions, Larger Content */
+        .hero-credentials {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 80px 0;
+            border-bottom: 1px solid #e9ecef;
         }
 
-        .hero-container {
+        .hero-credentials-container {
             max-width: 1220px;
             margin: 0 auto;
             padding: 0 40px;
-            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 350px 1fr;
+            gap: 60px;
+            align-items: center;
+            min-height: 500px;
         }
 
-        .hero-title {
+        /* Left Column - Ranking Statement */
+        .ranking-statement {
+            text-align: left;
+        }
+
+        .ranking-badge {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .ranking-number {
             font-family: 'Roboto', sans-serif;
-            font-size: 90px;
+            font-size: 84px;  /* Increased from 72px */
             font-weight: 900;
-            line-height: 0.889em;
-            letter-spacing: 1px;
+            color: #CE0D2D;
+            line-height: 1;
+        }
+
+        .ranking-text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;  /* Increased from 18px */
+            font-weight: 700;
+            color: #012D5E;
             text-transform: uppercase;
-            margin-bottom: 60px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+            line-height: 1.2;
         }
 
-        .hero-quote {
-            background: rgba(1, 45, 94, 0.6);
-            padding: 40px;
-            border-radius: 0;
-            max-width: 600px;
-            margin-bottom: 40px;
+        .ranking-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;  /* Increased from 42px */
+            font-weight: 900;
+            color: #012D5E;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            text-transform: uppercase;
         }
 
-        .hero-quote-text {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 20px;
+        .ranking-citation {
+            border-left: 4px solid #CE0D2D;
+            padding-left: 20px;
+        }
+
+        .ranking-citation p {
+            margin: 0 0 8px 0;
+            font-size: 17px;  /* Increased from 16px */
+            color: #012D5E;
+        }
+
+        .citation-detail {
+            font-size: 15px !important;  /* Increased from 14px */
+            color: #666 !important;
             font-style: italic;
-            color: white;
         }
 
-        .hero-signature {
-            font-family: 'Noto Serif', serif;
-            font-size: 20px;
+        /* Center Column - Candidate Photo */
+        .candidate-photo {
+            text-align: center;
+            position: relative;
+        }
+
+        .photo-container {
+            position: relative;
+        }
+
+        .photo-placeholder {
+            width: 320px;  /* Increased from 300px */
+            height: 375px;  /* Increased from 350px */
+            background-image: url('assets/images/new_hero.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(1, 45, 94, 0.3);
+            margin: 0 auto 20px auto;
+            border: 4px solid #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photo-placeholder::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: linear-gradient(transparent, rgba(1, 45, 94, 0.1));
+            pointer-events: none;
+        }
+
+        .photo-caption h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 26px;  /* Increased from 24px */
+            font-weight: 700;
+            color: #012D5E;
+            margin: 0 0 5px 0;
+        }
+
+        .photo-caption p {
+            font-size: 17px;  /* Increased from 16px */
+            color: #666;
+            margin: 0;
+        }
+
+        /* Right Column - Endorsement */
+        .endorsement-quote {
+            text-align: left;
+            position: relative;
+        }
+
+        .quote-mark {
+            font-size: 130px;  /* Increased from 120px */
+            font-weight: 900;
+            color: #CE0D2D;
+            line-height: 1;
+            margin-bottom: -20px;
+            opacity: 0.3;
+        }
+
+        .endorsement-quote blockquote {
+            margin: 0 0 25px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .endorsement-quote blockquote p {
+            font-size: 19px;  /* Increased from 18px */
+            line-height: 1.6;
+            color: #333;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .endorser {
             text-align: right;
-            color: white;
-            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .endorser strong {
+            color: #012D5E;
+            font-size: 19px;  /* Increased from 18px */
+        }
+
+        .endorser span {
+            color: #666;
+            font-size: 15px;  /* Increased from 14px */
         }
 
         .meet-section {
@@ -658,7 +756,7 @@
             margin-bottom: 10px;
         }
 
-        .news-item.highlight .news-badge {
+        .news-badge {
             background: #F8CB40;
             color: #012D5E;
             padding: 8px 16px;
@@ -786,8 +884,31 @@
             letter-spacing: 1px;
         }
 
+        /* Responsive Design */
         @media (max-width: 1024px) {
-            .hero-title { font-size: 56px; }
+            .hero-credentials-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+                text-align: center;
+            }
+
+            .ranking-statement, .endorsement-quote {
+                text-align: center;
+            }
+
+            .ranking-title {
+                font-size: 42px;
+            }
+
+            .ranking-number {
+                font-size: 72px;
+            }
+
+            .photo-placeholder {
+                width: 280px;
+                height: 330px;
+            }
+
             .meet-section, .cta-section { flex-direction: column; }
             .meet-content, .cta-content { padding: 60px 40px; }
             .news-grid { grid-template-columns: repeat(2, 1fr); }
@@ -798,9 +919,37 @@
             .header-container { flex-direction: column; gap: 20px; padding: 20px; }
             .nav-container { padding: 0; }
             .main-nav { flex-direction: column; gap: 20px; text-align: center; }
-            .hero { height: 80vh; padding: 40px 20px; }
-            .hero-title { font-size: 42px; }
-            .hero-container { padding: 0 20px; }
+
+            .hero-credentials {
+                padding: 60px 0;
+            }
+
+            .hero-credentials-container {
+                padding: 0 20px;
+                gap: 40px;
+            }
+
+            .ranking-number {
+                font-size: 64px;
+            }
+
+            .ranking-title {
+                font-size: 32px;
+            }
+
+            .photo-placeholder {
+                width: 240px;
+                height: 280px;
+            }
+
+            .quote-mark {
+                font-size: 100px;
+            }
+
+            .endorsement-quote blockquote p {
+                font-size: 17px;
+            }
+
             .meet-content, .cta-content { padding: 40px 20px; }
             .meet-title, .cta-title { font-size: 36px; }
             .news-grid { grid-template-columns: 1fr; gap: 20px; }
@@ -844,14 +993,11 @@
                     <li class="dropdown">
                         <a href="meet-bob.html">Meet Bob ▼</a>
                         <ul class="dropdown-menu">
-                            <li><a href="recognition.html">Recognitions </a></li>
+                            <li><a href="recognition.html" class="dropdown-item">Recognitions </a></li>
                             <!-- <li><a href="#gallery">Gallery</a></li> -->
                         </ul>
                     </li>
                     <li><a href="issues.html">Issues</a></li>
-                    <li>
-                        <a href="index.html#news">In The News</a>
-                    </li>
                     <li class="dropdown">
                         <a href="contact.html">Join Our Team ▼</a>
                         <ul class="dropdown-menu">
@@ -869,13 +1015,48 @@
         </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="hero-container">
-            <h1 class="hero-title zoom-in-left">JOHNS CREEK<br>RANKED #1<br>CITY TO LIVE IN</h1>
-            <div class="hero-quote fade-in-up">
-                <p class="hero-quote-text">"Bob Erramilli has proven himself to be a dedicated public servant who consistently puts the interests of Johns Creek residents first. His commitment to fiscal responsibility and smart growth makes him the right choice for our community."</p>
-                <div class="hero-signature">— Senator Shawn Still, Georgia State Senate</div>
+    <!-- Hero Credentials Section -->
+    <section class="hero-credentials" id="home">
+        <div class="hero-credentials-container">
+            
+            <!-- Left Column: Johns Creek Ranking -->
+            <div class="ranking-statement">
+                <div class="ranking-badge fade-in-up">
+                    <span class="ranking-number">#1</span>
+                    <span class="ranking-text">BEST PLACE<br>TO LIVE</span>
+                </div>
+                <h1 class="ranking-title fade-in-up">JOHNS CREEK<br>RANKED #1<br>IN AMERICA</h1>
+                <div class="ranking-citation fade-in-up">
+                    <p><strong>U.S. News & World Report</strong> • 2025-2026</p>
+                    <p class="citation-detail">First Georgia city to win this honor since rankings began in 2016</p>
+                </div>
             </div>
+
+            <!-- Center Column: Bob's Photo -->
+            <div class="candidate-photo fade-in">
+                <div class="photo-container">
+                    <div class="photo-placeholder">
+                        <!-- [Professional photo of Bob Erramilli] -->
+                    </div>
+                    <div class="photo-caption">
+                        <h3>Bob Erramilli</h3>
+                        <p>Johns Creek City Council</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Endorsement -->
+            <div class="endorsement-quote fade-in-up">
+                <div class="quote-mark">"</div>
+                <blockquote>
+                    <p>Bob Erramilli has proven himself to be a dedicated public servant who consistently puts the interests of Johns Creek residents first. His commitment to fiscal responsibility and smart growth makes him the right choice for our community.</p>
+                </blockquote>
+                <div class="endorser">
+                    <strong>— Senator Shawn Still</strong><br>
+                    <span>Georgia State Senate</span>
+                </div>
+            </div>
+
         </div>
     </section>
 
