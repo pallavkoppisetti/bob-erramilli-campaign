@@ -48,7 +48,7 @@
         /* Header */
         .header {
             background: #fff;
-            padding: 15px 0;
+            padding: 10px 0; /* REDUCED from 15px - 33% less padding */
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
@@ -64,48 +64,6 @@
             padding: 0 20px;
         }
 
-        /* Header Actions */
-        .header-actions {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .header-social {
-            display: flex;
-            gap: 12px;
-        }
-
-        .header-social a {
-            width: 36px;
-            height: 36px;
-            background: #012D5E;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            border-radius: 50%;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-
-        .header-social a:hover {
-            background: #CE0D2D;
-            transform: translateY(-2px);
-        }
-
-        /* Mobile Navigation Toggle */
-        .nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: #012D5E;
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        /* Campaign Branding */
         .campaign-branding {
             flex-shrink: 0;
             text-decoration: none;
@@ -113,7 +71,7 @@
 
         .campaign-name {
             font-family: 'Roboto', sans-serif;
-            font-size: 32px;
+            font-size: 32px; /* KEPT ORIGINAL SIZE */
             font-weight: 900;
             color: #012D5E;
             line-height: 1;
@@ -124,7 +82,7 @@
 
         .campaign-tagline {
             font-family: 'Roboto', sans-serif;
-            font-size: 12px;
+            font-size: 12px; /* KEPT ORIGINAL SIZE */
             font-weight: 500;
             color: #CE0D2D;
             line-height: 1;
@@ -137,7 +95,7 @@
             flex: 1;
             display: flex;
             justify-content: center;
-            padding: 0 40px;
+            padding: 0 30px; /* REDUCED from 40px */
         }
 
         .main-nav {
@@ -145,15 +103,15 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            gap: 20px;
+            gap: 15px; /* REDUCED from 20px */
         }
 
         .main-nav a {
             text-decoration: none;
             color: #012D5E;
             font-weight: 500;
-            font-size: 19px;
-            padding: 0px 14px;
+            font-size: 18px; /* KEPT ORIGINAL SIZE */
+            padding: 8px 12px; /* REDUCED from 10px 14px */
             transition: all 0.4s ease;
             display: flex;
             align-items: center;
@@ -184,7 +142,7 @@
             transform: translateY(-10px);
             transition: all 0.4s ease;
             z-index: 999;
-            padding: 6px 0px 15px 2px;
+            padding: 4px 0px 10px 2px; /* REDUCED from 6px 0px 15px 2px */
             list-style: none;
             margin: 0;
             pointer-events: none;
@@ -203,27 +161,10 @@
             padding: 0;
         }
 
-        .dropdown-menu a {
-            padding: 12px 20px;
-            color: #012D5E;
-            font-size: 16px;
-            font-weight: 500;
-            display: block;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .dropdown-menu a:hover,
-        .dropdown-menu a.active {
-            color: #CE0D2D;
-            background: rgba(255, 255, 255, 0.1);
-        }
-
         .dropdown-menu a.dropdown-item {
-            padding: 12px 20px;
+            padding: 10px 18px; /* REDUCED from 12px 20px */
             color: #012D5E;
-            font-size: 16px;
+            font-size: 16px; /* KEPT ORIGINAL SIZE */
             font-weight: 500;
             display: block;
             text-decoration: none;
@@ -241,20 +182,43 @@
             border-bottom: none;
         }
 
-        .donate-container {
-            width: 15%;
+        .header-actions {
             display: flex;
-            justify-content: flex-end;
             align-items: center;
+            gap: 15px; /* REDUCED from 20px */
+        }
+
+        .header-social {
+            display: flex;
+            gap: 8px; /* REDUCED from 12px */
+        }
+
+        .header-social a {
+            width: 36px; /* KEPT ORIGINAL SIZE */
+            height: 36px;
+            background: #012D5E;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50%;
+            font-size: 16px; /* KEPT ORIGINAL SIZE */
+            transition: all 0.3s ease;
+        }
+
+        .header-social a:hover {
+            background: #CE0D2D;
+            transform: translateY(-2px);
         }
 
         .donate-button {
             background: #CE0D2D;
             color: white;
-            padding: 16px 50px;
+            padding: 12px 40px; /* REDUCED from 14px 45px */
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
-            font-size: 14px;
+            font-size: 14px; /* KEPT ORIGINAL SIZE */
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -267,6 +231,16 @@
             background: #a00d25;
             transform: translateY(-2px);
             box-shadow: 0 5px 10px rgba(206, 13, 45, 0.4);
+        }
+
+        /* Mobile Navigation Toggle */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #012D5E;
+            font-size: 24px;
+            cursor: pointer;
         }
 
         .hero {
@@ -325,7 +299,7 @@
         /* Section 1: A PROUD JOHNS CREEK RESIDENT */
         .proud-section {
             background: white;
-            padding: 100px 0;
+            padding: 50px 0;
         }
 
         .proud-container {
@@ -414,7 +388,7 @@
         /* Section 2: MAN OF JOHNS CREEK */
         .man-section {
             background: #F1F5FA;
-            padding: 100px 0;
+            padding: 50px 0;
         }
 
         .man-container {
@@ -469,7 +443,7 @@
         /* Section 3: YEARS OF SERVICE */
         .service-section {
             background: white;
-            padding: 100px 0;
+            padding: 50px 0;
         }
 
         .service-container {
@@ -543,7 +517,7 @@
         .service-image {
             flex: 1;
             height: 500px;
-            background: url('assets/images/471210092_626735859692065_1231460104519616606_n.jpg');
+            background: url('assets/images/service.jpg');
             background-size: cover;
             background-position: center;
             border-radius: 8px;
@@ -864,7 +838,7 @@
                     <p>City Council District</p>
                 </div>
                 <div class="footer-column">
-                    <h3>QUICK LINKS</h3>
+                    <!-- <h3>QUICK LINKS</h3>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="meet-bob.html">Meet Bob</a></li>
@@ -872,7 +846,7 @@
                         <li><a href="index.html#news">In The News</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Join Our Team</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="footer-column">
                     <h3>CONTACT US</h3>

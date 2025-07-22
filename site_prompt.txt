@@ -1095,7 +1095,7 @@ File: /bob-erramilli-campaign/contact.html
         .footer {
             background: #1a2332;
             color: #a8b2d1;
-            padding: 80px 0 40px;
+            padding: 40px 0 20px;
         }
 
         .footer-container {
@@ -1107,28 +1107,28 @@ File: /bob-erramilli-campaign/contact.html
         .footer-content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 80px;
-            margin-bottom: 60px;
+            gap: 40px;
+            margin-bottom: 30px;
         }
 
         .footer-column h3 {
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .footer-column.brand h3 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 1.4;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .footer-column.brand p {
-            font-size: 14px;
+            font-size: 12px;
             color: #a8b2d1;
             margin: 0;
         }
@@ -1140,13 +1140,13 @@ File: /bob-erramilli-campaign/contact.html
         }
 
         .footer-links li {
-            margin-bottom: 15px;
+            margin-bottom: 8px;
         }
 
         .footer-links a {
             color: #a8b2d1;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             transition: color 0.3s ease;
         }
 
@@ -1155,16 +1155,16 @@ File: /bob-erramilli-campaign/contact.html
         }
 
         .footer-contact {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         .footer-contact a {
             color: #a8b2d1;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .footer-contact a:hover {
@@ -1173,12 +1173,12 @@ File: /bob-erramilli-campaign/contact.html
 
         .footer-social {
             display: flex;
-            gap: 15px;
+            gap: 10px;
         }
 
         .footer-social a {
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             background: #2a3441;
             border-radius: 50%;
             display: flex;
@@ -1187,6 +1187,7 @@ File: /bob-erramilli-campaign/contact.html
             color: #a8b2d1;
             text-decoration: none;
             transition: background 0.3s ease, color 0.3s ease;
+            font-size: 14px;
         }
 
         .footer-social a:hover {
@@ -1196,14 +1197,14 @@ File: /bob-erramilli-campaign/contact.html
 
         .footer-bottom {
             border-top: 1px solid #2a3441;
-            padding-top: 40px;
+            padding-top: 20px;
             text-align: center;
         }
 
         .footer-bottom p {
             color: #a8b2d1;
-            font-size: 14px;
-            margin: 5px 0;
+            font-size: 12px;
+            margin: 3px 0;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -1447,7 +1448,7 @@ File: /bob-erramilli-campaign/contact.html
                     <p>City Council District</p>
                 </div>
                 <div class="footer-column">
-                    <h3>QUICK LINKS</h3>
+                    <!-- <h3>QUICK LINKS</h3>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="meet-bob.html">Meet Bob</a></li>
@@ -1455,7 +1456,7 @@ File: /bob-erramilli-campaign/contact.html
                         <li><a href="index.html#news">In The News</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Join Our Team</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="footer-column">
                     <h3>CONTACT US</h3>
@@ -1948,7 +1949,7 @@ File: /bob-erramilli-campaign/gallery.html
         .footer {
             background: #1a2332;
             color: #a8b2d1;
-            padding: 80px 0 40px;
+            padding: 40px 0 20px;
         }
 
         .footer-container {
@@ -1960,28 +1961,28 @@ File: /bob-erramilli-campaign/gallery.html
         .footer-content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 80px;
-            margin-bottom: 60px;
+            gap: 40px;
+            margin-bottom: 30px;
         }
 
         .footer-column h3 {
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .footer-column.brand h3 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 1.4;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .footer-column.brand p {
-            font-size: 14px;
+            font-size: 12px;
             color: #a8b2d1;
             margin: 0;
         }
@@ -1993,13 +1994,13 @@ File: /bob-erramilli-campaign/gallery.html
         }
 
         .footer-links li {
-            margin-bottom: 15px;
+            margin-bottom: 8px;
         }
 
         .footer-links a {
             color: #a8b2d1;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             transition: color 0.3s ease;
         }
 
@@ -2008,16 +2009,16 @@ File: /bob-erramilli-campaign/gallery.html
         }
 
         .footer-contact {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         .footer-contact a {
             color: #a8b2d1;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .footer-contact a:hover {
@@ -2026,12 +2027,12 @@ File: /bob-erramilli-campaign/gallery.html
 
         .footer-social {
             display: flex;
-            gap: 15px;
+            gap: 10px;
         }
 
         .footer-social a {
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             background: #2a3441;
             border-radius: 50%;
             display: flex;
@@ -2040,6 +2041,7 @@ File: /bob-erramilli-campaign/gallery.html
             color: #a8b2d1;
             text-decoration: none;
             transition: background 0.3s ease, color 0.3s ease;
+            font-size: 14px;
         }
 
         .footer-social a:hover {
@@ -2049,14 +2051,14 @@ File: /bob-erramilli-campaign/gallery.html
 
         .footer-bottom {
             border-top: 1px solid #2a3441;
-            padding-top: 40px;
+            padding-top: 20px;
             text-align: center;
         }
 
         .footer-bottom p {
             color: #a8b2d1;
-            font-size: 14px;
-            margin: 5px 0;
+            font-size: 12px;
+            margin: 3px 0;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -2357,14 +2359,14 @@ File: /bob-erramilli-campaign/gallery.html
                     <p>City Council District</p>
                 </div>
                 <div class="footer-column">
-                    <h3>QUICK LINKS</h3>
+                    <!-- <h3>QUICK LINKS</h3>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="meet-bob.html">Meet Bob</a></li>
                         <li><a href="issues.html">Issues</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Join Our Team</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="footer-column">
                     <h3>CONTACT US</h3>
@@ -5126,7 +5128,7 @@ File: /bob-erramilli-campaign/index.html
         .footer {
             background: #1a2332;
             color: #a8b2d1;
-            padding: 80px 0 40px;
+            padding: 40px 0 20px;
         }
 
         .footer-container {
@@ -5138,28 +5140,28 @@ File: /bob-erramilli-campaign/index.html
         .footer-content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 80px;
-            margin-bottom: 60px;
+            gap: 40px;
+            margin-bottom: 30px;
         }
 
         .footer-column h3 {
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .footer-column.brand h3 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 1.4;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .footer-column.brand p {
-            font-size: 14px;
+            font-size: 12px;
             color: #a8b2d1;
             margin: 0;
         }
@@ -5171,13 +5173,13 @@ File: /bob-erramilli-campaign/index.html
         }
 
         .footer-links li {
-            margin-bottom: 15px;
+            margin-bottom: 8px;
         }
 
         .footer-links a {
             color: #a8b2d1;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             transition: color 0.3s ease;
         }
 
@@ -5186,16 +5188,16 @@ File: /bob-erramilli-campaign/index.html
         }
 
         .footer-contact {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         .footer-contact a {
             color: #a8b2d1;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .footer-contact a:hover {
@@ -5204,12 +5206,12 @@ File: /bob-erramilli-campaign/index.html
 
         .footer-social {
             display: flex;
-            gap: 15px;
+            gap: 10px;
         }
 
         .footer-social a {
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             background: #2a3441;
             border-radius: 50%;
             display: flex;
@@ -5218,6 +5220,7 @@ File: /bob-erramilli-campaign/index.html
             color: #a8b2d1;
             text-decoration: none;
             transition: background 0.3s ease, color 0.3s ease;
+            font-size: 14px;
         }
 
         .footer-social a:hover {
@@ -5227,14 +5230,14 @@ File: /bob-erramilli-campaign/index.html
 
         .footer-bottom {
             border-top: 1px solid #2a3441;
-            padding-top: 40px;
+            padding-top: 20px;
             text-align: center;
         }
 
         .footer-bottom p {
             color: #a8b2d1;
-            font-size: 14px;
-            margin: 5px 0;
+            font-size: 12px;
+            margin: 3px 0;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -5573,7 +5576,7 @@ File: /bob-erramilli-campaign/index.html
                     <p>City Council District</p>
                 </div>
                 <div class="footer-column">
-                    <h3>QUICK LINKS</h3>
+                    <!-- <h3>QUICK LINKS</h3>
                     <ul class="footer-links">
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
@@ -5582,7 +5585,7 @@ File: /bob-erramilli-campaign/index.html
                         <li><a href="index.html#news">In The News</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Join Our Team</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="footer-column">
                     <h3>CONTACT US</h3>
@@ -5651,29 +5654,1062 @@ File: /bob-erramilli-campaign/issues.html
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Issues - Bob Erramilli for Johns Creek</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Issues - Bob Erramilli for Johns Creek City Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.556em;
+            color: #14213D;
+            background-color: #fff;
+        }
+
+        /* Fade-in animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .zoom-in-left {
+            opacity: 0;
+            transform: translateX(-50px) scale(0.8);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .zoom-in-left.visible {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+
+        /* Header */
+        .header {
+            background: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        /* Campaign Branding */
+        .campaign-branding {
+            flex-shrink: 0;
+            text-decoration: none;
+        }
+
+        .campaign-name {
+            font-family: 'Roboto', sans-serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #012D5E;
+            line-height: 1;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .campaign-tagline {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            color: #CE0D2D;
+            line-height: 1;
+            margin: 2px 0 0 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+        .main-nav {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #012D5E;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 10px 14px;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            height: 100%;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #CE0D2D;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #f4f4f4;
+            box-shadow: 0 10px 30px 0 rgba(45, 45, 45, 0.2);
+            border: 1px solid #dadada;
+            border-radius: 0;
+            min-width: 300px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.4s ease;
+            z-index: 999;
+            padding: 6px 0px 15px 2px;
+            list-style: none;
+            margin: 0;
+            pointer-events: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .dropdown-menu li {
+            border-bottom: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown-menu a.dropdown-item {
+            padding: 12px 20px;
+            color: #012D5E;
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu a.dropdown-item:hover,
+        .dropdown-menu a.dropdown-item.active {
+            color: #CE0D2D;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu li:last-child a.dropdown-item {
+            border-bottom: none;
+        }
+
+        /* Header Actions */
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .header-social a {
+            width: 36px;
+            height: 36px;
+            background: #012D5E;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50%;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .header-social a:hover {
+            background: #CE0D2D;
+            transform: translateY(-2px);
+        }
+
+        .donate-button {
+            background: #CE0D2D;
+            color: white;
+            padding: 14px 45px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(206, 13, 45, 0.3);
+        }
+
+        .donate-button:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(206, 13, 45, 0.4);
+        }
+
+        /* Mobile Navigation Toggle */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #012D5E;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(20, 33, 61, 0.4), rgba(20, 33, 61, 0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23012D5E" width="1200" height="800"/><text x="50%" y="35%" text-anchor="middle" fill="white" font-size="36" font-family="Roboto">BOB ERRAMILLI&apos;S</text><text x="50%" y="50%" text-anchor="middle" fill="%23CE0D2D" font-size="64" font-family="Roboto" font-weight="900">KEY PRIORITIES</text><text x="50%" y="65%" text-anchor="middle" fill="white" font-size="28" font-family="Roboto">FOR JOHNS CREEK</text></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            width: 100%;
+        }
+
+        .hero-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 90px;
+            font-weight: 900;
+            line-height: 0.889em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: white;
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            font-weight: 400;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            margin-bottom: 40px;
+        }
+
+        .hero-cta {
+            background: #CE0D2D;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(206, 13, 45, 0.3);
+        }
+
+        .hero-cta:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(206, 13, 45, 0.4);
+        }
+
+        /* Issues Introduction Section */
+        .issues-intro {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .issues-intro-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            text-align: center;
+        }
+
+        .issues-intro-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            font-weight: 900;
+            color: #012D5E;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .issues-intro-text {
+            font-size: 20px;
+            color: #666;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Issues Section */
+        .issues-section {
+            background: #F1F5FA;
+            padding: 80px 0;
+        }
+
+        .issues-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .issues-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .issue-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .issue-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .issue-header {
+            background: #012D5E;
+            color: white;
+            padding: 30px;
+            position: relative;
+        }
+
+        .issue-number {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 48px;
+            font-weight: 900;
+            color: rgba(206, 13, 45, 0.3);
+        }
+
+        .issue-icon {
+            font-size: 32px;
+            color: #CE0D2D;
+            margin-bottom: 15px;
+        }
+
+        .issue-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .issue-tagline {
+            font-size: 16px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .issue-content {
+            padding: 40px 30px;
+        }
+
+        .issue-description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .issue-points {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .issue-points li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .issue-points li::before {
+            content: "✓";
+            color: #CE0D2D;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+
+        /* Call to Action Section */
+        .cta-section {
+            background: #012D5E;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .cta-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            font-weight: 900;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .cta-text {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn-primary {
+            background: #CE0D2D;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(206, 13, 45, 0.3);
+        }
+
+        .cta-btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 16px 38px;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn-primary:hover {
+            background: #a00d25;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(206, 13, 45, 0.4);
+        }
+
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #012D5E;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a2332;
+            color: #a8b2d1;
+            padding: 40px 0 20px;
+        }
+
+        .footer-container {
+            max-width: 1220px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h3 {
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-column.brand h3 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+
+        .footer-column.brand p {
+            font-size: 12px;
+            color: #a8b2d1;
+            margin: 0;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-contact {
+            margin-bottom: 15px;
+        }
+
+        .footer-contact a {
+            color: #a8b2d1;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-contact a:hover {
+            color: white;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-social a {
+            width: 32px;
+            height: 32px;
+            background: #2a3441;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a8b2d1;
+            text-decoration: none;
+            transition: background 0.3s ease, color 0.3s ease;
+            font-size: 14px;
+        }
+
+        .footer-social a:hover {
+            background: #012D5E;
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2a3441;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: #a8b2d1;
+            font-size: 12px;
+            margin: 3px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-title { font-size: 56px; }
+            .issues-intro-title, .cta-title { font-size: 36px; }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container { 
+                flex-wrap: wrap; 
+                gap: 15px; 
+                padding: 15px 20px; 
+            }
+            
+            .campaign-branding {
+                order: 1;
+                flex: 1;
+            }
+            
+            .campaign-name {
+                font-size: 28px;
+            }
+            
+            .nav-toggle {
+                display: block;
+                order: 2;
+            }
+            
+            .nav-container {
+                order: 4;
+                width: 100%;
+                flex: none;
+                padding: 0;
+                display: none;
+            }
+            
+            .nav-container.active {
+                display: block;
+            }
+            
+            .main-nav {
+                flex-direction: column;
+                gap: 0;
+                background: #f8f9fa;
+                border-radius: 8px;
+                padding: 10px 0;
+                margin-top: 10px;
+            }
+            
+            .main-nav a {
+                padding: 15px 20px;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .header-actions {
+                order: 3;
+                gap: 15px;
+            }
+            
+            .header-social {
+                gap: 8px;
+            }
+            
+            .header-social a {
+                width: 32px;
+                height: 32px;
+                font-size: 14px;
+            }
+            
+            .donate-button {
+                padding: 12px 25px;
+                font-size: 12px;
+            }
+
+            .hero { 
+                height: 80vh; 
+                padding: 40px 20px; 
+            }
+            
+            .hero-title { 
+                font-size: 42px; 
+            }
+            
+            .hero-container { 
+                padding: 0 20px; 
+            }
+            
+            .issues-intro-title, .cta-title { 
+                font-size: 28px; 
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .footer-content { 
+                grid-template-columns: 1fr; 
+                text-align: center; 
+                gap: 20px; 
+            }
+            
+            .footer-social { 
+                justify-content: center; 
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="main-header"><div class="container"><div class="main-header-inner"><div class="logo-container"><a href="index.html"><h1 class="logo-text">BOB ERRAMILLI</h1><p class="logo-subtext">FOR JOHNS CREEK CITY COUNCIL</p></a></div><nav class="main-navigation"><ul id="main-menu" class="main-menu"><li><a href="index.html">Home</a></li><li><a href="meet-bob.html">Meet Bob</a></li><li><a href="issues.html">Issues</a></li><li><a href="in-the-news.html">In The News</a></li><li><a href="contact.html">Contact</a></li></ul></nav><div class="header-donate-button"><a href="#donate" class="donate-button-link">Donate</a></div><button class="nav-toggle" aria-label="Toggle navigation">☰</button></div></div></header>
-    <main>
-        <div class="page-header"><div class="container"><h1 class="scroll-animate">Key Priorities</h1></div></div>
-        <section class="page-section"><div class="container">
-            <p class="section-intro scroll-animate">Bob is focused on the critical issues that matter most to Johns Creek residents. His priorities are designed to ensure our city remains a safe, prosperous, and wonderful place to live.</p>
-            <div class="issues-list">
-                <div class="issue-item scroll-animate"><h3>Public Safety</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
-                <div class="issue-item scroll-animate"><h3>Economic Development & Town Center</h3><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-                <div class="issue-item scroll-animate"><h3>Quality of Life & Parks</h3><p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat. Facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam.</p></div>
-                <div class="issue-item scroll-animate"><h3>Traffic Easement</h3><p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Ut enim ad minim veniam, quis nostrud exercitation.</p></div>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="campaign-branding">
+                <h1 class="campaign-name">BOB ERRAMILLI</h1>
+                <p class="campaign-tagline">WORKING FOR JOHNS CREEK</p>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+            <nav class="nav-container">
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="meet-bob.html">Meet Bob ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="recognition.html" class="dropdown-item">Recognitions</a></li>
+                            <li><a href="gallery.html" class="dropdown-item">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="issues.html" class="active">Issues</a></li>
+                    <li class="dropdown">
+                        <a href="contact.html">Join Our Team ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html?type=meet-greet" class="dropdown-item">Meet and Greet</a></li>
+                            <li><a href="contact.html?type=yard-sign" class="dropdown-item">Request Yard Sign</a></li>
+                            <li><a href="contact.html?type=walk-with-us" class="dropdown-item">Walk With Us in Your Neighborhood</a></li>
+                        </ul>    
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="header-social">
+                    <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <a href="#donate" class="donate-button">DONATE</a>
             </div>
-        </div></section>
-    </main>
-    <footer class="site-footer"><div class="footer-main container"><div class="footer-column"><h4>Councilman Bob Erramilli</h4></div><div class="footer-column"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="meet-bob.html">Meet Bob</a></li><li><a href="issues.html">Issues</a></li></ul></div><div class="footer-column"><h5>Contact Us</h5><ul><li><a href="mailto:info@boberramilli.com">info@boberramilli.com</a></li></ul><div class="social-icons"><a href="https://www.facebook.com/boberramilli4JC/" target="_blank"><i class="fab fa-facebook"></i></a></div></div></div><div class="footer-bottom"><p>© 2025 Bob Erramilli for Johns Creek City Council. All rights reserved.</p><p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p></div></footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="assets/js/main.js"></script>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title zoom-in-left">KEY<br>PRIORITIES</h1>
+            <p class="hero-subtitle fade-in-up">Bob's focused agenda for Johns Creek's future</p>
+            <a href="#issues" class="hero-cta fade-in-up">View Our Platform</a>
+        </div>
+    </section>
+
+    <section class="issues-intro">
+        <div class="issues-intro-container">
+            <h2 class="issues-intro-title fade-in-up">Our Commitment to Johns Creek</h2>
+            <p class="issues-intro-text fade-in-up">Bob Erramilli is focused on the critical issues that matter most to Johns Creek residents. His priorities are designed to ensure our city remains a safe, prosperous, and wonderful place to live, work, and raise a family.</p>
+        </div>
+    </section>
+
+    <section class="issues-section" id="issues">
+        <div class="issues-container">
+            <div class="issues-grid">
+                
+                <div class="issue-item fade-in-up">
+                    <div class="issue-header">
+                        <div class="issue-number">01</div>
+                        <div class="issue-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="issue-title">Public Safety</h3>
+                        <p class="issue-tagline">Keeping our community safe and secure</p>
+                    </div>
+                    <div class="issue-content">
+                        <p class="issue-description">Bob understands that public safety is the foundation of a thriving community. As a current City Council member, he has consistently supported initiatives that strengthen our police and fire departments while fostering positive community relationships.</p>
+                        <ul class="issue-points">
+                            <li>Support for adequate police and fire department funding</li>
+                            <li>Community policing initiatives to build trust and cooperation</li>
+                            <li>Enhanced emergency response capabilities and equipment</li>
+                            <li>Neighborhood watch programs and citizen engagement</li>
+                            <li>Strategic planning for future safety infrastructure needs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="issue-item fade-in-up">
+                    <div class="issue-header">
+                        <div class="issue-number">02</div>
+                        <div class="issue-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3 class="issue-title">Smart Growth & Development</h3>
+                        <p class="issue-tagline">Balanced development that preserves our quality of life</p>
+                    </div>
+                    <div class="issue-content">
+                        <p class="issue-description">Johns Creek's growth must be managed thoughtfully to maintain the character and livability that makes our city special. Bob advocates for smart development that balances economic growth with community values and environmental stewardship.</p>
+                        <ul class="issue-points">
+                            <li>Thoughtful zoning that protects residential neighborhoods</li>
+                            <li>Strategic commercial development to support local economy</li>
+                            <li>Preservation of green spaces and environmental resources</li>
+                            <li>Infrastructure planning that accommodates sustainable growth</li>
+                            <li>Community input in major development decisions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="issue-item fade-in-up">
+                    <div class="issue-header">
+                        <div class="issue-number">03</div>
+                        <div class="issue-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3 class="issue-title">Fiscal Responsibility</h3>
+                        <p class="issue-tagline">Maximizing taxpayer value through efficient governance</p>
+                    </div>
+                    <div class="issue-content">
+                        <p class="issue-description">As a successful business owner and healthcare professional, Bob brings proven financial management expertise to city governance. He is committed to ensuring every tax dollar is spent wisely and delivers maximum value to Johns Creek residents.</p>
+                        <ul class="issue-points">
+                            <li>Transparent budget processes with community oversight</li>
+                            <li>Efficient allocation of resources across city departments</li>
+                            <li>Long-term financial planning for infrastructure needs</li>
+                            <li>Regular audits and performance reviews of city programs</li>
+                            <li>Competitive bidding processes for major city contracts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="issue-item fade-in-up">
+                    <div class="issue-header">
+                        <div class="issue-number">04</div>
+                        <div class="issue-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 class="issue-title">Traffic Management</h3>
+                        <p class="issue-tagline">Improving mobility and reducing congestion</p>
+                    </div>
+                    <div class="issue-content">
+                        <p class="issue-description">Traffic congestion affects quality of life and economic vitality. Bob supports comprehensive transportation solutions that improve traffic flow while maintaining the safety and character of our neighborhoods.</p>
+                        <ul class="issue-points">
+                            <li>Strategic traffic signal optimization and timing improvements</li>
+                            <li>Road infrastructure improvements and maintenance programs</li>
+                            <li>Pedestrian and bicycle safety enhancements</li>
+                            <li>Coordination with regional transportation authorities</li>
+                            <li>Smart technology solutions for traffic management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="issue-item fade-in-up">
+                    <div class="issue-header">
+                        <div class="issue-number">05</div>
+                        <div class="issue-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h3 class="issue-title">Parks & Recreation</h3>
+                        <p class="issue-tagline">Enhancing community spaces and recreational opportunities</p>
+                    </div>
+                    <div class="issue-content">
+                        <p class="issue-description">Quality parks and recreation facilities are essential for community health, family enjoyment, and property values. Bob supports expanding and improving recreational opportunities that serve residents of all ages and interests.</p>
+                        <ul class="issue-points">
+                            <li>Expansion and improvement of existing park facilities</li>
+                            <li>Development of new recreational programs for all age groups</li>
+                            <li>Maintenance and enhancement of walking trails and green spaces</li>
+                            <li>Community sports facilities and youth athletic programs</li>
+                            <li>Accessible recreation options for seniors and individuals with disabilities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="issue-item fade-in-up">
+                    <div class="issue-header">
+                        <div class="issue-number">06</div>
+                        <div class="issue-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="issue-title">Education Support</h3>
+                        <p class="issue-tagline">Partnering with schools for student success</p>
+                    </div>
+                    <div class="issue-content">
+                        <p class="issue-description">While education is primarily managed at the county level, the city plays an important supporting role. Bob believes in fostering strong partnerships between the city and school system to ensure Johns Creek students have every opportunity to succeed.</p>
+                        <ul class="issue-points">
+                            <li>Collaboration with Fulton County Schools on facility needs</li>
+                            <li>Support for school safety and security initiatives</li>
+                            <li>City programs that complement educational objectives</li>
+                            <li>After-school and summer recreational programs for students</li>
+                            <li>Community partnerships that enhance learning opportunities</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title fade-in-up">Join Our Movement</h2>
+            <p class="cta-text fade-in-up">Bob Erramilli's proven leadership, business experience, and community dedication make him the right choice for Johns Creek. Help us build a stronger, safer, and more prosperous future for our city.</p>
+            <div class="cta-buttons fade-in-up">
+                <a href="contact.html" class="cta-btn-primary">Get Involved</a>
+                <a href="#donate" class="cta-btn-secondary">Donate Today</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column brand">
+                    <h3>Representative Bob Erramilli</h3>
+                    <p>City Council District</p>
+                </div>
+                <div class="footer-column">
+                    <!-- <h3>QUICK LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="meet-bob.html">Meet Bob</a></li>
+                        <li><a href="issues.html">Issues</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Join Our Team</a></li>
+                    </ul> -->
+                </div>
+                <div class="footer-column">
+                    <h3>CONTACT US</h3>
+                    <div class="footer-contact">
+                        <a href="mailto:info@boberramilli.com">
+                            <i class="fas fa-envelope"></i>
+                            info@boberramilli.com
+                        </a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL. ALL RIGHTS RESERVED.</p>
+                <p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navContainer = document.querySelector('.nav-container');
+
+            if (navToggle && navContainer) {
+                navToggle.addEventListener('click', function() {
+                    navContainer.classList.toggle('active');
+                    this.textContent = navContainer.classList.contains('active') ? '×' : '☰';
+                });
+            }
+        });
+
+        // Intersection Observer for animations
+        if ('IntersectionObserver' in window) {
+            const animatedElements = document.querySelectorAll('.fade-in-up, .zoom-in-left');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Active navigation highlighting
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.main-nav a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath || 
+                    (currentPath === 'issues.html' && link.getAttribute('href') === 'issues.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 
@@ -6236,7 +7272,7 @@ File: /bob-erramilli-campaign/meet-bob.html
         .footer {
             background: #1a2332;
             color: #a8b2d1;
-            padding: 80px 0 40px;
+            padding: 40px 0 20px;
         }
 
         .footer-container {
@@ -6248,28 +7284,28 @@ File: /bob-erramilli-campaign/meet-bob.html
         .footer-content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 80px;
-            margin-bottom: 60px;
+            gap: 40px;
+            margin-bottom: 30px;
         }
 
         .footer-column h3 {
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .footer-column.brand h3 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 1.4;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .footer-column.brand p {
-            font-size: 14px;
+            font-size: 12px;
             color: #a8b2d1;
             margin: 0;
         }
@@ -6281,13 +7317,13 @@ File: /bob-erramilli-campaign/meet-bob.html
         }
 
         .footer-links li {
-            margin-bottom: 15px;
+            margin-bottom: 8px;
         }
 
         .footer-links a {
             color: #a8b2d1;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             transition: color 0.3s ease;
         }
 
@@ -6296,16 +7332,16 @@ File: /bob-erramilli-campaign/meet-bob.html
         }
 
         .footer-contact {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         .footer-contact a {
             color: #a8b2d1;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .footer-contact a:hover {
@@ -6314,12 +7350,12 @@ File: /bob-erramilli-campaign/meet-bob.html
 
         .footer-social {
             display: flex;
-            gap: 15px;
+            gap: 10px;
         }
 
         .footer-social a {
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             background: #2a3441;
             border-radius: 50%;
             display: flex;
@@ -6328,6 +7364,7 @@ File: /bob-erramilli-campaign/meet-bob.html
             color: #a8b2d1;
             text-decoration: none;
             transition: background 0.3s ease, color 0.3s ease;
+            font-size: 14px;
         }
 
         .footer-social a:hover {
@@ -6337,14 +7374,14 @@ File: /bob-erramilli-campaign/meet-bob.html
 
         .footer-bottom {
             border-top: 1px solid #2a3441;
-            padding-top: 40px;
+            padding-top: 20px;
             text-align: center;
         }
 
         .footer-bottom p {
             color: #a8b2d1;
-            font-size: 14px;
-            margin: 5px 0;
+            font-size: 12px;
+            margin: 3px 0;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -6547,7 +7584,7 @@ File: /bob-erramilli-campaign/meet-bob.html
                     <p>City Council District</p>
                 </div>
                 <div class="footer-column">
-                    <h3>QUICK LINKS</h3>
+                    <!-- <h3>QUICK LINKS</h3>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="meet-bob.html">Meet Bob</a></li>
@@ -6555,7 +7592,7 @@ File: /bob-erramilli-campaign/meet-bob.html
                         <li><a href="index.html#news">In The News</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Join Our Team</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="footer-column">
                     <h3>CONTACT US</h3>
@@ -7101,7 +8138,7 @@ File: /bob-erramilli-campaign/recognition.html
         .footer {
             background: #1a2332;
             color: #a8b2d1;
-            padding: 80px 0 40px;
+            padding: 40px 0 20px;
         }
 
         .footer-container {
@@ -7113,28 +8150,28 @@ File: /bob-erramilli-campaign/recognition.html
         .footer-content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 80px;
-            margin-bottom: 60px;
+            gap: 40px;
+            margin-bottom: 30px;
         }
 
         .footer-column h3 {
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .footer-column.brand h3 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 1.4;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .footer-column.brand p {
-            font-size: 14px;
+            font-size: 12px;
             color: #a8b2d1;
             margin: 0;
         }
@@ -7146,13 +8183,13 @@ File: /bob-erramilli-campaign/recognition.html
         }
 
         .footer-links li {
-            margin-bottom: 15px;
+            margin-bottom: 8px;
         }
 
         .footer-links a {
             color: #a8b2d1;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             transition: color 0.3s ease;
         }
 
@@ -7161,16 +8198,16 @@ File: /bob-erramilli-campaign/recognition.html
         }
 
         .footer-contact {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         .footer-contact a {
             color: #a8b2d1;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 14px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .footer-contact a:hover {
@@ -7179,12 +8216,12 @@ File: /bob-erramilli-campaign/recognition.html
 
         .footer-social {
             display: flex;
-            gap: 15px;
+            gap: 10px;
         }
 
         .footer-social a {
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             background: #2a3441;
             border-radius: 50%;
             display: flex;
@@ -7193,6 +8230,7 @@ File: /bob-erramilli-campaign/recognition.html
             color: #a8b2d1;
             text-decoration: none;
             transition: background 0.3s ease, color 0.3s ease;
+            font-size: 14px;
         }
 
         .footer-social a:hover {
@@ -7202,14 +8240,14 @@ File: /bob-erramilli-campaign/recognition.html
 
         .footer-bottom {
             border-top: 1px solid #2a3441;
-            padding-top: 40px;
+            padding-top: 20px;
             text-align: center;
         }
 
         .footer-bottom p {
             color: #a8b2d1;
-            font-size: 14px;
-            margin: 5px 0;
+            font-size: 12px;
+            margin: 3px 0;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -7422,14 +8460,14 @@ File: /bob-erramilli-campaign/recognition.html
                 </div>
                 <div class="footer-column">
                     <h3>QUICK LINKS</h3>
-                    <ul class="footer-links">
+                    <!-- <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="meet-bob.html">Meet Bob</a></li>
                         <li><a href="#issues">Issues</a></li>
                         <li><a href="index.html#news">In The News</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Join Our Team</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="footer-column">
                     <h3>CONTACT US</h3>
