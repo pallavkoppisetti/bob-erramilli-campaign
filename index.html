@@ -17,14 +17,14 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            font-size: 18px; /* KEPT ORIGINAL */
+            font-size: 18px;
             font-weight: 400;
-            line-height: 1.556em; /* KEPT ORIGINAL */
+            line-height: 1.556em;
             color: #14213D;
             background-color: #fff;
         }
 
-        /* KEPT ORIGINAL ANIMATIONS */
+        /* ANIMATIONS */
         .fade-in-up {
             opacity: 0;
             transform: translateY(30px);
@@ -56,10 +56,10 @@
             opacity: 1;
         }
 
-        /* HEADER - PADDING REDUCTION ONLY */
+        /* HEADER */
         .header {
             background: #fff;
-            padding: 10px 0; /* REDUCED from 15px - 33% less padding */
+            padding: 10px 0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
@@ -82,7 +82,7 @@
 
         .campaign-name {
             font-family: 'Roboto', sans-serif;
-            font-size: 32px; /* KEPT ORIGINAL SIZE */
+            font-size: 32px;
             font-weight: 900;
             color: #012D5E;
             line-height: 1;
@@ -93,7 +93,7 @@
 
         .campaign-tagline {
             font-family: 'Roboto', sans-serif;
-            font-size: 12px; /* KEPT ORIGINAL SIZE */
+            font-size: 12px;
             font-weight: 500;
             color: #CE0D2D;
             line-height: 1;
@@ -106,7 +106,7 @@
             flex: 1;
             display: flex;
             justify-content: center;
-            padding: 0 30px; /* REDUCED from 40px */
+            padding: 0 30px;
         }
 
         .main-nav {
@@ -114,15 +114,15 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            gap: 15px; /* REDUCED from 20px */
+            gap: 15px;
         }
 
         .main-nav a {
             text-decoration: none;
             color: #012D5E;
             font-weight: 500;
-            font-size: 18px; /* KEPT ORIGINAL SIZE */
-            padding: 8px 12px; /* REDUCED from 10px 14px */
+            font-size: 18px;
+            padding: 8px 12px;
             transition: all 0.4s ease;
             display: flex;
             align-items: center;
@@ -153,7 +153,7 @@
             transform: translateY(-10px);
             transition: all 0.4s ease;
             z-index: 999;
-            padding: 4px 0px 10px 2px; /* REDUCED from 6px 0px 15px 2px */
+            padding: 4px 0px 10px 2px;
             list-style: none;
             margin: 0;
             pointer-events: none;
@@ -173,9 +173,9 @@
         }
 
         .dropdown-menu a.dropdown-item {
-            padding: 10px 18px; /* REDUCED from 12px 20px */
+            padding: 10px 18px;
             color: #012D5E;
-            font-size: 16px; /* KEPT ORIGINAL SIZE */
+            font-size: 16px;
             font-weight: 500;
             display: block;
             text-decoration: none;
@@ -196,16 +196,16 @@
         .header-actions {
             display: flex;
             align-items: center;
-            gap: 15px; /* REDUCED from 20px */
+            gap: 15px;
         }
 
         .header-social {
             display: flex;
-            gap: 8px; /* REDUCED from 12px */
+            gap: 8px;
         }
 
         .header-social a {
-            width: 36px; /* KEPT ORIGINAL SIZE */
+            width: 36px;
             height: 36px;
             background: #012D5E;
             color: white;
@@ -214,7 +214,7 @@
             justify-content: center;
             text-decoration: none;
             border-radius: 50%;
-            font-size: 16px; /* KEPT ORIGINAL SIZE */
+            font-size: 16px;
             transition: all 0.3s ease;
         }
 
@@ -226,10 +226,10 @@
         .donate-button {
             background: #CE0D2D;
             color: white;
-            padding: 12px 40px; /* REDUCED from 14px 45px */
+            padding: 12px 40px;
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
-            font-size: 14px; /* KEPT ORIGINAL SIZE */
+            font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -253,28 +253,29 @@
             cursor: pointer;
         }
 
-        /* HERO CREDENTIALS SECTION - RESTRUCTURED FOR ENDORSEMENTS ON BOTH SIDES OF PHOTOS */
+        /* HERO CREDENTIALS SECTION - REFINED LAYOUT */
         .hero-credentials {
             background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            padding: 60px 0 80px 0;
+            padding: 80px 0 100px 0;
             border-bottom: 1px solid #e9ecef;
             min-height: calc(100vh - 70px);
             display: flex;
             align-items: center;
+            overflow: hidden;
         }
 
         .hero-credentials-container {
-            max-width: 1400px;
+            max-width: 1500px;
             margin: 0 auto;
             padding: 0 20px;
             display: grid;
-            grid-template-columns: 0.8fr 1.4fr;
-            gap: 100px;
+            grid-template-columns: 0.7fr 1.3fr;
+            gap: 120px;
             align-items: center;
             width: 100%;
         }
 
-        /* Left Section - Ranking */
+        /* Left Section - Ranking (More Compact) */
         .left-section {
             text-align: left;
         }
@@ -282,13 +283,13 @@
         .ranking-badge {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 30px;
+            gap: 20px;
+            margin-bottom: 35px;
         }
 
         .ranking-number {
             font-family: 'Roboto', sans-serif;
-            font-size: 120px;
+            font-size: 100px;
             font-weight: 900;
             color: #CE0D2D;
             line-height: 1;
@@ -296,7 +297,7 @@
 
         .ranking-text {
             font-family: 'Roboto', sans-serif;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
             color: #012D5E;
             text-transform: uppercase;
@@ -306,11 +307,11 @@
 
         .ranking-title {
             font-family: 'Roboto', sans-serif;
-            font-size: 58px;
+            font-size: 48px;
             font-weight: 900;
             color: #012D5E;
             line-height: 1.1;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
             text-transform: uppercase;
         }
 
@@ -321,146 +322,80 @@
 
         .ranking-citation p {
             margin: 0 0 8px 0;
-            font-size: 20px;
+            font-size: 18px;
             color: #012D5E;
         }
 
         .citation-detail {
-            font-size: 18px !important;
+            font-size: 16px !important;
             color: #666 !important;
             font-style: italic;
         }
 
-        /* Right Section - Photos and Endorsements */
+        /* Right Section - Photos and Endorsements SHOWCASE */
         .right-section {
             position: relative;
             display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            gap: 20px;
             justify-content: center;
+            align-items: center;
+            min-height: 600px;
         }
 
-        /* Endorsement Quote Styling */
-        .endorsement-quote {
-            background: #f8f8f8;
-            padding: 30px 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            position: absolute;
-            max-width: 320px;
-            right: -80px;
-            top: 20px;
-            z-index: 3;
-        }
-
-        .endorsement-quote.second-quote {
-            display: none; /* Hide second quote in desktop view */
-        }
-
-        .quote-mark {
-            font-size: 50px;
-            font-weight: 900;
-            color: #CE0D2D;
-            line-height: 0.5;
-            opacity: 0.3;
-            position: absolute;
-            top: 12px;
-            left: 18px;
-        }
-
-        .quote-mark.closing {
-            left: auto;
-            right: 18px;
-            top: auto;
-            bottom: 25px;
-        }
-
-        .endorsement-quote blockquote {
-            margin: 25px 0 15px 0;
-            position: relative;
-            z-index: 2;
-        }
-
-        .endorsement-quote blockquote p {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #333;
-            font-style: italic;
-            margin: 0;
-            text-align: left;
-        }
-
-        .endorser {
-            text-align: right;
-            font-size: 14px;
-            margin-top: 15px;
-        }
-
-        .endorser strong {
-            color: #012D5E;
-            font-size: 16px;
-        }
-
-        .endorser span {
-            color: #666;
-            font-size: 13px;
-        }
-
-        /* Photos Container */
+        /* Photos Container - Central Focus */
         .candidate-photos {
             position: relative;
-            margin-top: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            z-index: 5;
         }
 
         .photos-container {
             position: relative;
-            width: 450px;
-            height: 400px;
-            margin: 0 auto;
+            width: 500px;
+            height: 450px;
         }
 
         .photo {
             position: absolute;
-            width: 300px;
-            height: 320px;
             background-size: cover;
             background-position: center top;
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(1, 45, 94, 0.18);
-            border: 4px solid #fff;
-            transition: box-shadow 0.2s;
+            border-radius: 16px;
+            box-shadow: 0 12px 40px rgba(1, 45, 94, 0.25);
+            border: 5px solid #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
+        .photo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(1, 45, 94, 0.35);
+        }
 
         .photo-1 {
-            background-image: url('assets/images/new_hero.jpg');
+            background-image: url('assets/images/home-1.jpeg');
+            width: 320px;
+            height: 380px;
             left: 0;
             top: 0;
-            z-index: 2;
+            z-index: 3;
         }
 
         .photo-2 {
-            background-image: url('assets/images/veteran.jpg'); /* Replace with second image */
-            left: 170px;
-            top: 200px;
-            z-index: 1;
+            background-image: url('assets/images/home-2.jpg');
+            width: 280px;
+            height: 320px;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
         }
 
         .photos-caption {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 30px;
             position: relative;
             z-index: 10;
         }
 
         .photos-caption h3 {
             font-family: 'Roboto', sans-serif;
-            font-size: 28px;
+            font-size: 30px;
             font-weight: 700;
             color: #012D5E;
             margin: 0 0 8px 0;
@@ -472,10 +407,87 @@
             margin: 0;
         }
 
-        /* MEET SECTION - PADDING REDUCTION ONLY */
+        /* Endorsements - Strategically Positioned Around Photos */
+        .endorsement-quote {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 35px 45px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            position: absolute;
+            max-width: 380px;
+            z-index: 4;
+            border: 2px solid rgba(206, 13, 45, 0.1);
+        }
+
+        /* First endorsement - Top Right */
+        .endorsement-quote.first {
+            top: -20px;
+            right: -40px;
+        }
+
+        /* Second endorsement - Bottom Left */
+        .endorsement-quote.second {
+            bottom: -30px;
+            left: -60px;
+            display: block;
+        }
+
+        .quote-mark {
+            font-size: 60px;
+            font-weight: 900;
+            color: #CE0D2D;
+            line-height: 0.5;
+            opacity: 0.4;
+            position: absolute;
+        }
+
+        .quote-mark.opening {
+            top: 15px;
+            left: 20px;
+        }
+
+        .quote-mark.closing {
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .endorsement-quote blockquote {
+            margin: 30px 0 20px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .endorsement-quote blockquote p {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #333;
+            font-style: italic;
+            margin: 0;
+            text-align: left;
+        }
+
+        .endorser {
+            text-align: right;
+            font-size: 14px;
+            margin-top: 18px;
+        }
+
+        .endorser strong {
+            color: #012D5E;
+            font-size: 17px;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .endorser span {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* MEET SECTION */
         .meet-section {
             display: flex;
-            min-height: 70vh; /* REDUCED from 100vh - 30% less height */
+            min-height: 70vh;
         }
 
         .meet-image {
@@ -489,7 +501,7 @@
             width: 65.872%;
             background: #012D5E;
             color: white;
-            padding: 25px; /* REDUCED from 32px - 22% less padding */
+            padding: 25px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -497,14 +509,14 @@
 
         .meet-badge {
             color: white;
-            font-size: 18px; /* KEPT ORIGINAL SIZE */
+            font-size: 18px;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1px;
             line-height: 1.5em;
-            margin-bottom: 15px; /* REDUCED from 20px */
+            margin-bottom: 15px;
             position: relative;
-            padding-bottom: 12px; /* REDUCED from 15px */
+            padding-bottom: 12px;
         }
 
         .meet-badge::after {
@@ -519,35 +531,35 @@
 
         .meet-title {
             font-family: 'Roboto', sans-serif;
-            font-size: 50px; /* KEPT ORIGINAL SIZE */
+            font-size: 50px;
             font-weight: 900;
             line-height: 1em;
             letter-spacing: 0.5px;
             text-transform: uppercase;
             color: white;
-            margin-bottom: 30px; /* REDUCED from 40px */
+            margin-bottom: 30px;
         }
 
         .meet-text {
-            font-size: 17px; /* changed to 17px from 16px */
+            font-size: 17px;
             line-height: 1.8;
-            margin-bottom: 20px; /* REDUCED from 30px */
+            margin-bottom: 20px;
         }
 
         .meet-button {
             background: #CE0D2D;
             color: white;
-            padding: 15px 30px; /* KEPT ORIGINAL SIZE */
+            padding: 15px 30px;
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
-            font-size: 12px; /* KEPT ORIGINAL SIZE */
+            font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             border-radius: 3px;
             display: inline-block;
             width: fit-content;
-            margin-top: 15px; /* REDUCED from 20px */
+            margin-top: 15px;
             transition: background 0.3s ease;
         }
 
@@ -555,10 +567,10 @@
             background: #a00d25;
         }
 
-        /* RECOGNITION SECTION - PADDING REDUCTION ONLY */
+        /* RECOGNITION SECTION */
         .recognition-section {
             background: white;
-            padding: 50px 0; /* REDUCED from 100px - 50% less padding */
+            padding: 50px 0;
         }
 
         .recognition-container {
@@ -570,17 +582,17 @@
 
         .recognition-title {
             font-family: 'Roboto', sans-serif;
-            font-size: 50px; /* KEPT ORIGINAL SIZE */
+            font-size: 50px;
             font-weight: 900;
             line-height: 1em;
             letter-spacing: 0.5px;
             text-transform: uppercase;
             color: #012D5E;
-            margin-bottom: 30px; /* REDUCED from 40px */
+            margin-bottom: 30px;
         }
 
         .recognition-text {
-            font-size: 16px; /* KEPT ORIGINAL SIZE */
+            font-size: 16px;
             line-height: 1.3;
             max-width: 1300px;
             margin: 0 auto;
@@ -588,7 +600,7 @@
             letter-spacing: -0.2px;
         }
 
-        /* GALLERY SECTION - ADDED FROM GALLERY.HTML */
+        /* GALLERY SECTION */
         .gallery-section {
             background: #F1F5FA;
             padding: 60px 20px 80px 20px;
@@ -611,7 +623,6 @@
             margin-bottom: 50px;
         }
 
-        /* Updated Gallery Grid - Fixed Masonry Layout */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -629,7 +640,6 @@
             background-color: #fff;
         }
 
-        /* Image sizing - FIXED approach */
         .gallery-item img {
             width: 100%;
             display: block;
@@ -638,7 +648,6 @@
             transition: transform 0.3s ease;
         }
 
-        /* Size variations using grid-row-end */
         .gallery-item.tall {
             grid-row-end: span 3;
         }
@@ -666,7 +675,6 @@
             min-height: 200px;
         }
 
-        /* Default size for items without specific classes */
         .gallery-item:not(.tall):not(.medium):not(.short) {
             grid-row-end: span 2;
         }
@@ -676,7 +684,6 @@
             min-height: 280px;
         }
 
-        /* Hover effects */
         .gallery-item:hover {
             transform: translateY(-8px) scale(1.02);
             box-shadow: 0 15px 40px rgba(0,0,0,0.25);
@@ -687,7 +694,6 @@
             transform: scale(1.05);
         }
 
-        /* Hover Tooltip */
         .gallery-item .tooltip {
             position: absolute;
             bottom: 0;
@@ -708,10 +714,10 @@
             transform: translateY(0);
         }
 
-        /* SERVICE SECTION - PADDING REDUCTION ONLY */
+        /* SERVICE SECTION */
         .service-section {
             background: #F1F5FA;
-            padding: 50px 0; /* REDUCED from 100px - 50% less padding */
+            padding: 50px 0;
         }
 
         .service-container {
@@ -722,28 +728,28 @@
         }
 
         .service-years {
-            font-size: 72px; /* KEPT ORIGINAL SIZE */
+            font-size: 72px;
             font-weight: 900;
             color: #012D5E;
-            margin-bottom: 30px; /* REDUCED from 40px */
+            margin-bottom: 30px;
         }
 
         .service-subtitle {
-            font-size: 18px; /* KEPT ORIGINAL SIZE */
-            margin-bottom: 40px; /* REDUCED from 60px */
+            font-size: 18px;
+            margin-bottom: 40px;
             color: #666;
         }
 
         .service-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px; /* REDUCED from 30px */
+            gap: 20px;
             text-align: left;
         }
 
         .service-item {
-            font-size: 19px; /* changed to 19px from 16px */
-            padding: 15px 0; /* REDUCED from 20px */
+            font-size: 19px;
+            padding: 15px 0;
             border-bottom: 1px solid #ddd;
             position: relative;
             padding-left: 25px;
@@ -757,11 +763,11 @@
             left: 0;
         }
 
-        /* QUOTE SECTION - PADDING REDUCTION ONLY */
+        /* QUOTE SECTION */
         .quote-section {
             background: #012D5E;
             color: white;
-            padding: 25px 0; /* REDUCED from 100px - 50% less padding */
+            padding: 25px 0;
             text-align: center;
         }
 
@@ -772,37 +778,37 @@
         }
 
         .quote-text {
-            font-size: 36px; /* KEPT ORIGINAL SIZE */
+            font-size: 36px;
             font-style: italic;
             line-height: 1.4;
             font-weight: 300;
         }
 
-        /* CTA SECTION - PADDING REDUCTION ONLY */
+        /* CTA SECTION */
         .cta-section {
             display: flex;
-            min-height: 60vh; /* REDUCED from 80vh - 25% less height */
+            min-height: 60vh;
         }
 
         .cta-content {
             flex: 1;
             background: white;
-            padding: 50px 45px; /* REDUCED from 80px 60px */
+            padding: 50px 45px;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
         .cta-header {
-            font-size: 14px; /* KEPT ORIGINAL SIZE */
+            font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #666;
-            margin-bottom: 15px; /* REDUCED from 20px */
+            margin-bottom: 15px;
             text-align: center;
             position: relative;
-            padding-bottom: 12px; /* REDUCED from 15px */
+            padding-bottom: 12px;
         }
 
         .cta-header::after {
@@ -818,30 +824,30 @@
 
         .cta-title {
             font-family: 'Roboto', sans-serif;
-            font-size: 50px; /* KEPT ORIGINAL SIZE */
+            font-size: 50px;
             font-weight: 900;
             line-height: 1em;
             letter-spacing: 0.5px;
             text-transform: uppercase;
             color: #012D5E;
             text-align: center;
-            margin-bottom: 25px; /* REDUCED from 30px */
+            margin-bottom: 25px;
         }
 
         .cta-subtitle {
-            font-size: 18px; /* KEPT ORIGINAL SIZE */
+            font-size: 18px;
             text-align: center;
-            margin-bottom: 30px; /* REDUCED from 40px */
+            margin-bottom: 30px;
             color: #666;
         }
 
         .cta-btn {
             background: #CE0D2D;
             color: white;
-            padding: 20px 50px; /* KEPT ORIGINAL SIZE */
+            padding: 20px 50px;
             text-decoration: none;
             font-family: 'Roboto', sans-serif;
-            font-size: 16px; /* KEPT ORIGINAL SIZE */
+            font-size: 16px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -865,116 +871,70 @@
             background-position: center;
         }
 
-        /* FOOTER - PADDING REDUCTION ONLY */
+        /* FOOTER */
         .footer {
             background: #1a2332;
             color: #a8b2d1;
-            padding: 30px 0 15px; /* REDUCED from 40px 0 20px */
+            padding: 12px 0;
+            text-align: center;
+            width: 100%;
         }
 
         .footer-container {
-            max-width: 1220px;
-            margin: 0 auto;
-            padding: 0 40px;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
         }
 
         .footer-content {
             display: grid;
-            grid-template-columns: 2fr 1fr; /* CHANGED from 1fr 1fr 1fr - ELIMINATES EMPTY COLUMN */
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 40px;
-            margin-bottom: 20px; /* REDUCED from 30px */
-        }
-
-        .footer-column h3 {
-            color: white;
-            font-size: 16px; /* KEPT ORIGINAL SIZE */
-            font-weight: 700;
-            margin-bottom: 12px; /* REDUCED from 15px */
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .footer-column.brand h3 {
-            font-size: 14px; /* KEPT ORIGINAL SIZE */
-            font-weight: 700;
-            line-height: 1.4;
-            margin-bottom: 6px; /* REDUCED from 8px */
-        }
-
-        .footer-column.brand p {
-            font-size: 12px; /* KEPT ORIGINAL SIZE */
-            color: #a8b2d1;
-            margin: 0;
-        }
-
-        .footer-contact {
-            margin-bottom: 12px; /* REDUCED from 15px */
-        }
-
-        .footer-contact a {
-            color: #a8b2d1;
-            text-decoration: none;
-            font-size: 14px; /* KEPT ORIGINAL SIZE */
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .footer-contact a:hover {
-            color: white;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 8px; /* REDUCED from 10px */
-        }
-
-        .footer-social a {
-            width: 32px; /* KEPT ORIGINAL SIZE */
-            height: 32px;
-            background: #2a3441;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #a8b2d1;
-            text-decoration: none;
-            transition: background 0.3s ease, color 0.3s ease;
-            font-size: 14px; /* KEPT ORIGINAL SIZE */
-        }
-
-        .footer-social a:hover {
-            background: #012D5E;
-            color: white;
+            margin-bottom: 30px;
         }
 
         .footer-bottom {
-            border-top: 1px solid #2a3441;
-            padding-top: 15px; /* REDUCED from 20px */
+            border-top: none;
+            padding-top: 0;
             text-align: center;
         }
 
         .footer-bottom p {
             color: #a8b2d1;
-            font-size: 12px; /* KEPT ORIGINAL SIZE */
-            margin: 2px 0; /* REDUCED from 3px */
+            font-size: 12px;
+            margin: 0;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        /* RESPONSIVE OPTIMIZATIONS - 4-COLUMN LAYOUT */
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 1400px) {
+            .hero-credentials-container {
+                gap: 80px;
+            }
+            
+            .endorsement-quote.first {
+                right: -20px;
+            }
+            
+            .endorsement-quote.second {
+                left: -30px;
+            }
+        }
+
         @media (max-width: 1200px) {
             .hero-credentials {
-                height: auto; /* ALLOW natural height on tablets */
+                height: auto;
                 min-height: calc(100vh - 60px);
                 padding: 40px 0 50px 0;
             }
 
             .hero-credentials-container {
-                grid-template-columns: 1fr; /* STACK ALL COLUMNS */
-                gap: 50px;
+                grid-template-columns: 1fr;
+                gap: 60px;
                 text-align: center;
             }
+            
             .left-section {
                 text-align: center;
             }
@@ -990,31 +950,23 @@
 
             .right-section {
                 width: 100%;
-                flex-direction: column;
-                align-items: center;
+                justify-content: center;
             }
 
-            .endorsement-quote {
+            .endorsement-quote.first {
                 position: relative;
-                right: auto;
                 top: auto;
-                margin-bottom: -30px;
+                right: auto;
+                margin-bottom: 40px;
                 max-width: 600px;
             }
 
-            .ranking-title {
-                font-size: 32px; /* TABLET optimized */
-            }
-
-            .endorsement-quote blockquote p {
-                text-align: center;
-                font-size: 16px;
-            }
-
-            .candidate-photos {
-                height: auto;
-                order: 2; /* PHOTOS AFTER RANKING */
-                margin-bottom: 40px;
+            .endorsement-quote.second {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                margin-top: 40px;
+                max-width: 600px;
             }
 
             .photos-container {
@@ -1026,17 +978,11 @@
                 height: 360px;
             }
 
-            .photos-caption {
-                margin-top: 30px;
-                position: relative;
-                z-index: 10;
+            .meet-section, .cta-section {
+                flex-direction: column;
             }
 
-            .meet-section, .cta-section { 
-                flex-direction: column; 
-            }
-            
-            .meet-content, .cta-content { 
+            .meet-content, .cta-content {
                 padding: 40px;
             }
 
@@ -1048,27 +994,27 @@
 
             .gallery-grid {
                 grid-template-columns: repeat(3, 1fr);
-                gap: 15px; 
+                gap: 15px;
             }
         }
 
         @media (max-width: 768px) {
-            .header-container { 
-                flex-wrap: wrap; 
-                gap: 10px; /* REDUCED from 15px */
-                padding: 10px 20px; /* REDUCED padding */
+            .header-container {
+                flex-wrap: wrap;
+                gap: 10px;
+                padding: 10px 20px;
             }
-            
+
             .campaign-branding {
                 order: 1;
                 flex: 1;
             }
-            
+
             .nav-toggle {
                 display: block;
                 order: 2;
             }
-            
+
             .nav-container {
                 order: 4;
                 width: 100%;
@@ -1076,32 +1022,32 @@
                 padding: 0;
                 display: none;
             }
-            
+
             .nav-container.active {
                 display: block;
             }
-            
+
             .main-nav {
                 flex-direction: column;
                 gap: 0;
                 background: #f8f9fa;
                 border-radius: 8px;
-                padding: 8px 0; /* REDUCED from 10px */
-                margin-top: 8px; /* REDUCED from 10px */
+                padding: 8px 0;
+                margin-top: 8px;
             }
-            
+
             .main-nav a {
-                padding: 12px 20px; /* REDUCED from 15px 20px */
+                padding: 12px 20px;
                 border-bottom: 1px solid #eee;
             }
-            
+
             .header-actions {
                 order: 3;
-                gap: 10px; /* REDUCED from 15px */
+                gap: 10px;
             }
-            
+
             .header-social {
-                gap: 6px; /* REDUCED from 8px */
+                gap: 6px;
             }
 
             .hero-credentials {
@@ -1114,19 +1060,15 @@
             }
 
             .ranking-number {
-                font-size: 60px; /* MOBILE optimized */
+                font-size: 60px;
             }
 
             .ranking-text {
-                font-size: 16px; /* MOBILE optimized */
+                font-size: 16px;
             }
+            
             .ranking-title {
-                font-size: 28px; /* MOBILE optimized */
-            }
-
-            .candidate-photos {
-                height: auto;
-                margin-bottom: 30px;
+                font-size: 28px;
             }
 
             .photos-container {
@@ -1151,8 +1093,6 @@
 
             .photos-caption {
                 margin-top: 20px;
-                position: relative;
-                z-index: 10;
             }
 
             .photos-caption h3 {
@@ -1175,30 +1115,19 @@
                 font-size: 40px;
             }
 
-            .meet-content, .cta-content { 
-                padding: 25px 20px; /* REDUCED from 40px 20px */
-            }
-            
-            .service-grid { 
-                grid-template-columns: 1fr; 
-                gap: 15px; /* REDUCED spacing */
-            }
-            
-            .footer-content { 
-                grid-template-columns: 1fr; 
-                text-align: center; 
-                gap: 25px; /* REDUCED from 40px */
-            }
-            
-            .footer-social { 
-                justify-content: center; 
+            .meet-content, .cta-content {
+                padding: 25px 20px;
             }
 
-            /* Mobile-specific padding reductions */
+            .service-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
             .recognition-section,
             .service-section,
             .quote-section {
-                padding: 30px 0; /* REDUCED further for mobile */
+                padding: 30px 0;
             }
 
             .gallery-grid {
@@ -1221,32 +1150,32 @@
                 <h1 class="campaign-name">BOB ERRAMILLI</h1>
                 <p class="campaign-tagline">WORKING FOR JOHNS CREEK</p>
             </a>
-            
+
             <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-            
+
             <nav class="nav-container">
                 <ul class="main-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="meet-bob.html">Meet Bob</a></li>
-                    <li><a href="issues.html">Priorities</a></li>
+                    <li><a href="priorities.html">Priorities</a></li>
                     <li class="dropdown">
                         <a href="contact.html">Join Our Team ▼</a>
                         <ul class="dropdown-menu">
                             <li><a href="contact.html?type=meet-greet" class="dropdown-item">Meet and Greet</a></li>
                             <li><a href="contact.html?type=yard-sign" class="dropdown-item">Request Yard Sign</a></li>
                             <li><a href="contact.html?type=walk-with-us" class="dropdown-item">Walk With Us in Your Neighborhood</a></li>
-                        </ul>    
+                        </ul>
                     </li>
                 </ul>
             </nav>
-            
+
             <div class="header-actions">
                 <div class="header-social">
                     <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
+                    <a href="mailto:info@boberramilli.com" target="_blank" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
                 <a href="#donate" class="donate-button">DONATE</a>
@@ -1254,11 +1183,11 @@
         </div>
     </header>
 
-    <!-- Hero Credentials Section - RESTRUCTURED FOR TARGET LAYOUT -->
+    <!-- REFINED HERO CREDENTIALS SECTION -->
     <section class="hero-credentials" id="home">
         <div class="hero-credentials-container">
-            
-            <!-- Left Side: Ranking Statement -->
+
+            <!-- Left Side: Ranking Statement (More Compact) -->
             <div class="left-section">
                 <div class="ranking-statement">
                     <div class="ranking-badge fade-in-up">
@@ -1272,23 +1201,24 @@
                     </div>
                 </div>
             </div>
-        
-            <!-- Right Side: Photos and Endorsements -->
+
+            <!-- Right Side: Photos with Surrounding Endorsements -->
             <div class="right-section">
-                <!-- Endorsement Quote (positioned above photos) -->
-                <div class="endorsement-quote fade-in-up">
-                    <div class="quote-mark">"</div>
+                
+                <!-- First Endorsement - Top Right -->
+                <div class="endorsement-quote first fade-in-up">
+                    <div class="quote-mark opening">"</div>
                     <blockquote>
                         <p>Bob Erramilli has proven himself to be a dedicated public servant who consistently puts the interests of Johns Creek residents first. His commitment to fiscal responsibility and smart growth makes him the right choice for our community.</p>
                     </blockquote>
                     <div class="quote-mark closing">"</div>
                     <div class="endorser">
-                        <strong>— Senator Shawn Still</strong><br>
+                        <strong>— Senator Shawn Still</strong>
                         <span>Georgia State Senate</span>
                     </div>
                 </div>
-            
-                <!-- Overlapping Photos -->
+
+                <!-- Central Photos -->
                 <div class="candidate-photos fade-in">
                     <div class="photos-container">
                         <div class="photo photo-1"></div>
@@ -1299,21 +1229,22 @@
                         <p>Johns Creek City Council</p>
                     </div>
                 </div>
-            
-                <!-- Second Endorsement (duplicate) -->
-                <div class="endorsement-quote second-quote fade-in-up">
-                    <div class="quote-mark">"</div>
+
+                <!-- Second Endorsement - Bottom Left -->
+                <div class="endorsement-quote second fade-in-up">
+                    <div class="quote-mark opening">"</div>
                     <blockquote>
-                        <p>Bob Erramilli has proven himself to be a dedicated public servant who consistently puts the interests of Johns Creek residents first. His commitment to fiscal responsibility and smart growth makes him the right choice for our community.</p>
+                        <p>Bob's leadership in our community has been exceptional. His military background, medical expertise, and business acumen make him uniquely qualified to serve Johns Creek with distinction.</p>
                     </blockquote>
                     <div class="quote-mark closing">"</div>
                     <div class="endorser">
-                        <strong>— Senator Shawn Still</strong><br>
-                        <span>Georgia State Senate</span>
+                        <strong>— Community Leader</strong>
+                        <span>Johns Creek Chamber</span>
                     </div>
                 </div>
+
             </div>
-        
+
         </div>
     </section>
 
@@ -1335,12 +1266,12 @@
         </div>
     </section>
 
-    <!-- GALLERY SECTION MOVED FROM GALLERY.HTML -->
+    <!-- GALLERY SECTION -->
     <section class="gallery-section">
         <div class="gallery-container">
             <h2 class="gallery-title fade-in-up">MOMENTS OF SERVICE<br>AND COMMUNITY LEADERSHIP</h2>
             <div class="gallery-grid">
-                
+
                 <div class="gallery-item tall fade-in-up">
                     <img src="assets/images/JRK9603.jpg" alt="City Council Session">
                     <div class="tooltip">Bob advocating for fiscal responsibility at city council</div>
@@ -1355,7 +1286,7 @@
                     <img src="assets/images/IMG_2696.JPG" alt="Healthcare Forum">
                     <div class="tooltip">Leading healthcare accessibility discussions</div>
                 </div>
-                
+
                 <div class="gallery-item tall fade-in-up">
                     <img src="assets/images/210810.jpg" alt="Medical Practice">
                     <div class="tooltip">Bob at his medical practice serving patients</div>
@@ -1371,10 +1302,6 @@
                     <div class="tooltip">Successful passage of community development resolution</div>
                 </div>
 
-
-
-
-                
             </div>
         </div>
     </section>
@@ -1417,34 +1344,8 @@
     </section>
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-column brand">
-                    <h3>Bob Erramilli</h3>
-                    <p>Johns Creek City Council</p>
-                </div>
-                <div class="footer-column">
-                    <h3>CONTACT US</h3>
-                    <div class="footer-contact">
-                        <a href="mailto:info@boberramilli.com">
-                            <i class="fas fa-envelope"></i>
-                            info@boberramilli.com
-                        </a>
-                    </div>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/boberramilli4JC/" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 BOB ERRAMILLI FOR JOHNS CREEK CITY COUNCIL. ALL RIGHTS RESERVED.</p>
-                <p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p>
-            </div>
+        <div class="footer-bottom">
+            <p>PAID FOR BY FRIENDS OF BOB ERRAMILLI</p>
         </div>
     </footer>
 
@@ -1453,7 +1354,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const navToggle = document.querySelector('.nav-toggle');
             const navContainer = document.querySelector('.nav-container');
-            
+
             if (navToggle && navContainer) {
                 navToggle.addEventListener('click', function() {
                     navContainer.classList.toggle('active');
@@ -1465,7 +1366,7 @@
         // Intersection Observer for fade-in animations
         if ('IntersectionObserver' in window) {
             const animatedElements = document.querySelectorAll('.fade-in-up, .zoom-in-left, .fade-in');
-            
+
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
